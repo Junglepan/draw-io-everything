@@ -1,0 +1,55 @@
+{
+  "scope": "Four fictional advanced scenarios; visual and stated-scope review, not general standards certification",
+  "checks": [
+    "15 gallery XML/reference/geometry checks passed",
+    "skill quick_validate passed",
+    "all four advanced diagrams exported individually with draw.io",
+    "all four inspected after routing and label repairs",
+    "local Markdown links passed"
+  ],
+  "repairs": [
+    "landscape boundary title and paired relation labels separated; external finance provider ownership clarified",
+    "lineage internal formula expressed in metric contract to avoid overlapping fan-out paths",
+    "returns full-refund route bypasses discount task; notification messages have dedicated corridor",
+    "reconciliation failure and cancel use separate corridors; retry counter initialized per record"
+  ],
+  "limitations": [
+    "BPMN subset: transport, no-response timeout and refund-provider failure compensation excluded explicitly",
+    "lineage: selected fields only; model keys and non-focus dependencies partly omitted",
+    "fixed example layouts; no claim of arbitrary-scale auto-layout"
+  ],
+  "artifacts": [
+    {
+      "file": "examples/advanced/reconciliation-flow.drawio",
+      "sha256": "c18213fb36d4291684fae1178a96ecf6822ad06bd269c109d0505a31a17a5d31"
+    },
+    {
+      "file": "examples/advanced/reconciliation-flow.png",
+      "sha256": "814886b51adede21aba63e267b17e5ad1d8696048d081a01e96c5f8520a96bc1"
+    },
+    {
+      "file": "examples/advanced/retail-landscape.drawio",
+      "sha256": "5e3e1efa5ce61b41c2889770e278513924fef10b3f98d538a8e6624db7ad67cf"
+    },
+    {
+      "file": "examples/advanced/retail-landscape.png",
+      "sha256": "f36e9f78492a84c777d063b17b6fd79d096c595b697b0e8c1f3aefeee6f050a1"
+    },
+    {
+      "file": "examples/advanced/returns-collaboration.drawio",
+      "sha256": "00796040b9b6a75f1d045295a631b16ab1284154263143382d5ba1f8bcbd194a"
+    },
+    {
+      "file": "examples/advanced/returns-collaboration.png",
+      "sha256": "193537d3acc85a1b691ae7ac7fd78cbaedb690019d2569478683bef6f582508f"
+    },
+    {
+      "file": "examples/advanced/revenue-lineage.drawio",
+      "sha256": "e00919c46bfcafe8351073e91213e797f2866530752009f765cbb55199033820"
+    },
+    {
+      "file": "examples/advanced/revenue-lineage.png",
+      "sha256": "bd3dcc36b315a458ff6a5710f5c8d00cac623e7ce07ddd327d1731e57847cb3f"
+    }
+  ]
+}

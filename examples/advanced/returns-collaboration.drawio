@@ -1,0 +1,264 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net" type="device">
+  <diagram id="returns-collaboration" name="returns-collaboration">
+    <mxGraphModel dx="2440" dy="1290" grid="1" gridSize="10" page="1" pageScale="1" pageWidth="2440" pageHeight="1290" background="#FFFFFF">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" value="跨组织退货协作 · 从申请到结算" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=18;fontColor=#263238;strokeColor=#263238;strokeWidth=1.5;fillColor=#FFFFFF;text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=32;fontColor=#263238;">
+          <mxGeometry as="geometry" x="40" y="30" width="2100" height="50" />
+        </mxCell>
+        <mxCell id="subtitle" value="NORTHSTAR COMMERCE  /  虚构业务场景  /  BPMN 协作视图（表示法子集）" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=18;fontColor=#263238;strokeColor=#263238;strokeWidth=1.5;fillColor=#FFFFFF;text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=16;fontColor=#64717A;">
+          <mxGeometry as="geometry" x="42" y="86" width="2200" height="30" />
+        </mxCell>
+        <mxCell id="customer" value="客户  /  独立参与者 · 内部过程不展开" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=18;fontColor=#263238;strokeColor=#263238;strokeWidth=1.5;fillColor=#FFFFFF;fillColor=#F1F7F8;strokeColor=#176B87;align=left;spacingLeft=25;fontStyle=1;fontColor=#176B87;">
+          <mxGeometry as="geometry" x="40" y="150" width="2360" height="85" />
+        </mxCell>
+        <mxCell id="lane-0" value="" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=18;fontColor=#263238;strokeColor=#263238;strokeWidth=1.5;fillColor=#FFFFFF;fillColor=#FAFBFC;strokeColor=#A6B0B6;">
+          <mxGeometry as="geometry" x="40" y="330" width="2360" height="270" />
+        </mxCell>
+        <mxCell id="lane-title-0" value="客户服务" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=18;fontColor=#263238;strokeColor=#263238;strokeWidth=1.5;fillColor=#FFFFFF;fillColor=#EDF0F2;strokeColor=#A6B0B6;fontStyle=1;verticalLabelPosition=middle;">
+          <mxGeometry as="geometry" x="40" y="330" width="110" height="270" />
+        </mxCell>
+        <mxCell id="lane-1" value="" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=18;fontColor=#263238;strokeColor=#263238;strokeWidth=1.5;fillColor=#FFFFFF;fillColor=#FFFFFF;strokeColor=#A6B0B6;">
+          <mxGeometry as="geometry" x="40" y="600" width="2360" height="285" />
+        </mxCell>
+        <mxCell id="lane-title-1" value="仓储质检" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=18;fontColor=#263238;strokeColor=#263238;strokeWidth=1.5;fillColor=#FFFFFF;fillColor=#EDF0F2;strokeColor=#A6B0B6;fontStyle=1;verticalLabelPosition=middle;">
+          <mxGeometry as="geometry" x="40" y="600" width="110" height="285" />
+        </mxCell>
+        <mxCell id="lane-2" value="" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=18;fontColor=#263238;strokeColor=#263238;strokeWidth=1.5;fillColor=#FFFFFF;fillColor=#FAFBFC;strokeColor=#A6B0B6;">
+          <mxGeometry as="geometry" x="40" y="885" width="2360" height="260" />
+        </mxCell>
+        <mxCell id="lane-title-2" value="财务结算" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=18;fontColor=#263238;strokeColor=#263238;strokeWidth=1.5;fillColor=#FFFFFF;fillColor=#EDF0F2;strokeColor=#A6B0B6;fontStyle=1;verticalLabelPosition=middle;">
+          <mxGeometry as="geometry" x="40" y="885" width="110" height="260" />
+        </mxCell>
+        <mxCell id="pool-title" value="NORTHSTAR · 企业内部流程" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=18;fontColor=#263238;strokeColor=#263238;strokeWidth=1.5;fillColor=#FFFFFF;text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=18;fontColor=#263238;">
+          <mxGeometry as="geometry" x="950" y="290" width="900" height="30" />
+        </mxCell>
+        <mxCell id="request" value="✉" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=18;fontColor=#263238;strokeColor=#263238;strokeWidth=1.5;fillColor=#FFFFFF;ellipse;aspect=fixed;strokeWidth=1.5;fontSize=21;">
+          <mxGeometry as="geometry" x="190" y="392" width="38" height="38" />
+        </mxCell>
+        <mxCell id="request-label" value="收到申请" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=18;fontColor=#263238;strokeColor=#263238;strokeWidth=1.5;fillColor=#FFFFFF;text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=14;fontColor=#263238;">
+          <mxGeometry as="geometry" x="148" y="436" width="125" height="38" />
+        </mxCell>
+        <mxCell id="review" value="&lt;b&gt;核验退货资格&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#64717A&quot; style=&quot;font-size:13px&quot;&gt;人工 · 订单 / 时效 / 品类&lt;/font&gt;" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=18;fontColor=#263238;strokeColor=#263238;strokeWidth=1.5;fillColor=#FFFFFF;rounded=1;arcSize=12;spacing=8;">
+          <mxGeometry as="geometry" x="270" y="375" width="170" height="72" />
+        </mxCell>
+        <mxCell id="eligible" value="×" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=18;fontColor=#263238;strokeColor=#263238;strokeWidth=1.5;fillColor=#FFFFFF;rhombus;fontSize=30;">
+          <mxGeometry as="geometry" x="500" y="384" width="54" height="54" />
+        </mxCell>
+        <mxCell id="eligible-label" value="符合退货政策？" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=18;fontColor=#263238;strokeColor=#263238;strokeWidth=1.5;fillColor=#FFFFFF;text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=15;fontColor=#263238;">
+          <mxGeometry as="geometry" x="465" y="345" width="140" height="30" />
+        </mxCell>
+        <mxCell id="instructions" value="&lt;b&gt;发送退货指引&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#64717A&quot; style=&quot;font-size:13px&quot;&gt;通知 · RMA / 地址 / 包装&lt;/font&gt;" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=18;fontColor=#263238;strokeColor=#263238;strokeWidth=1.5;fillColor=#FFFFFF;rounded=1;arcSize=12;spacing=8;">
+          <mxGeometry as="geometry" x="630" y="375" width="170" height="72" />
+        </mxCell>
+        <mxCell id="reject" value="&lt;b&gt;告知拒绝原因&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#64717A&quot; style=&quot;font-size:13px&quot;&gt;通知 · 附申诉入口&lt;/font&gt;" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=18;fontColor=#263238;strokeColor=#263238;strokeWidth=1.5;fillColor=#FFFFFF;rounded=1;arcSize=12;spacing=8;">
+          <mxGeometry as="geometry" x="630" y="505" width="170" height="72" />
+        </mxCell>
+        <mxCell id="rejected" value="" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=18;fontColor=#263238;strokeColor=#263238;strokeWidth=1.5;fillColor=#FFFFFF;ellipse;aspect=fixed;strokeWidth=3.5;fontSize=21;">
+          <mxGeometry as="geometry" x="930" y="522" width="38" height="38" />
+        </mxCell>
+        <mxCell id="rejected-label" value="申请关闭" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=18;fontColor=#263238;strokeColor=#263238;strokeWidth=1.5;fillColor=#FFFFFF;text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=14;fontColor=#263238;">
+          <mxGeometry as="geometry" x="888" y="566" width="125" height="38" />
+        </mxCell>
+        <mxCell id="receive" value="&lt;b&gt;接收并登记包裹&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#64717A&quot; style=&quot;font-size:13px&quot;&gt;人工 · 扫码绑定 RMA&lt;/font&gt;" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=18;fontColor=#263238;strokeColor=#263238;strokeWidth=1.5;fillColor=#FFFFFF;rounded=1;arcSize=12;spacing=8;">
+          <mxGeometry as="geometry" x="890" y="680" width="170" height="72" />
+        </mxCell>
+        <mxCell id="inspect" value="&lt;b&gt;检查商品与凭证&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#64717A&quot; style=&quot;font-size:13px&quot;&gt;人工 · 数量 / 状态 / 配件&lt;/font&gt;" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=18;fontColor=#263238;strokeColor=#263238;strokeWidth=1.5;fillColor=#FFFFFF;rounded=1;arcSize=12;spacing=8;">
+          <mxGeometry as="geometry" x="1120" y="680" width="170" height="72" />
+        </mxCell>
+        <mxCell id="quality" value="×" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=18;fontColor=#263238;strokeColor=#263238;strokeWidth=1.5;fillColor=#FFFFFF;rhombus;fontSize=30;">
+          <mxGeometry as="geometry" x="1360" y="689" width="54" height="54" />
+        </mxCell>
+        <mxCell id="quality-label" value="可全额退款？" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=18;fontColor=#263238;strokeColor=#263238;strokeWidth=1.5;fillColor=#FFFFFF;text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=15;fontColor=#263238;">
+          <mxGeometry as="geometry" x="1325" y="650" width="140" height="30" />
+        </mxCell>
+        <mxCell id="restock" value="&lt;b&gt;确认全额退款&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#64717A&quot; style=&quot;font-size:13px&quot;&gt;处理 · 更新可售库存&lt;/font&gt;" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=18;fontColor=#263238;strokeColor=#263238;strokeWidth=1.5;fillColor=#FFFFFF;rounded=1;arcSize=12;spacing=8;">
+          <mxGeometry as="geometry" x="1510" y="630" width="170" height="72" />
+        </mxCell>
+        <mxCell id="partial" value="&lt;b&gt;核定折价方案&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#64717A&quot; style=&quot;font-size:13px&quot;&gt;人工 · 留存证据与金额&lt;/font&gt;" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=18;fontColor=#263238;strokeColor=#263238;strokeWidth=1.5;fillColor=#FFFFFF;rounded=1;arcSize=12;spacing=8;">
+          <mxGeometry as="geometry" x="1510" y="760" width="170" height="72" />
+        </mxCell>
+        <mxCell id="offer" value="&lt;b&gt;发送折价方案&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#64717A&quot; style=&quot;font-size:13px&quot;&gt;通知 · 金额 / 处置说明&lt;/font&gt;" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=18;fontColor=#263238;strokeColor=#263238;strokeWidth=1.5;fillColor=#FFFFFF;rounded=1;arcSize=12;spacing=8;">
+          <mxGeometry as="geometry" x="1740" y="760" width="170" height="72" />
+        </mxCell>
+        <mxCell id="answer" value="&lt;b&gt;接收客户答复&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#64717A&quot; style=&quot;font-size:13px&quot;&gt;接收 · 本例假设最终答复&lt;/font&gt;" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=18;fontColor=#263238;strokeColor=#263238;strokeWidth=1.5;fillColor=#FFFFFF;rounded=1;arcSize=12;spacing=8;">
+          <mxGeometry as="geometry" x="1960" y="760" width="170" height="72" />
+        </mxCell>
+        <mxCell id="accepted" value="×" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=18;fontColor=#263238;strokeColor=#263238;strokeWidth=1.5;fillColor=#FFFFFF;rhombus;fontSize=30;">
+          <mxGeometry as="geometry" x="2200" y="769" width="54" height="54" />
+        </mxCell>
+        <mxCell id="accepted-label" value="接受方案？" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=18;fontColor=#263238;strokeColor=#263238;strokeWidth=1.5;fillColor=#FFFFFF;text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=15;fontColor=#263238;">
+          <mxGeometry as="geometry" x="2165" y="730" width="140" height="30" />
+        </mxCell>
+        <mxCell id="shipback" value="&lt;b&gt;退回商品并结案&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#64717A&quot; style=&quot;font-size:13px&quot;&gt;处理 · 本例不收退回运费&lt;/font&gt;" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=18;fontColor=#263238;strokeColor=#263238;strokeWidth=1.5;fillColor=#FFFFFF;rounded=1;arcSize=12;spacing=8;">
+          <mxGeometry as="geometry" x="2150" y="625" width="190" height="72" />
+        </mxCell>
+        <mxCell id="closed" value="" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=18;fontColor=#263238;strokeColor=#263238;strokeWidth=1.5;fillColor=#FFFFFF;ellipse;aspect=fixed;strokeWidth=3.5;fontSize=21;">
+          <mxGeometry as="geometry" x="2350" y="642" width="38" height="38" />
+        </mxCell>
+        <mxCell id="closed-label" value="退回完成" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=18;fontColor=#263238;strokeColor=#263238;strokeWidth=1.5;fillColor=#FFFFFF;text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=14;fontColor=#263238;">
+          <mxGeometry as="geometry" x="2308" y="686" width="125" height="38" />
+        </mxCell>
+        <mxCell id="merge" value="×" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=18;fontColor=#263238;strokeColor=#263238;strokeWidth=1.5;fillColor=#FFFFFF;rhombus;fontSize=30;">
+          <mxGeometry as="geometry" x="1730" y="960" width="54" height="54" />
+        </mxCell>
+        <mxCell id="merge-label" value="退款路径汇合" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=18;fontColor=#263238;strokeColor=#263238;strokeWidth=1.5;fillColor=#FFFFFF;text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=15;fontColor=#263238;">
+          <mxGeometry as="geometry" x="1695" y="921" width="140" height="30" />
+        </mxCell>
+        <mxCell id="pay" value="&lt;b&gt;执行原路退款&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#64717A&quot; style=&quot;font-size:13px&quot;&gt;服务 · 幂等键 = RMA&lt;/font&gt;" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=18;fontColor=#263238;strokeColor=#263238;strokeWidth=1.5;fillColor=#FFFFFF;rounded=1;arcSize=12;spacing=8;">
+          <mxGeometry as="geometry" x="1840" y="951" width="170" height="72" />
+        </mxCell>
+        <mxCell id="notify" value="&lt;b&gt;通知结算结果&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#64717A&quot; style=&quot;font-size:13px&quot;&gt;通知 · 金额 / 凭证&lt;/font&gt;" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=18;fontColor=#263238;strokeColor=#263238;strokeWidth=1.5;fillColor=#FFFFFF;rounded=1;arcSize=12;spacing=8;">
+          <mxGeometry as="geometry" x="2070" y="951" width="170" height="72" />
+        </mxCell>
+        <mxCell id="done" value="" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=18;fontColor=#263238;strokeColor=#263238;strokeWidth=1.5;fillColor=#FFFFFF;ellipse;aspect=fixed;strokeWidth=3.5;fontSize=21;">
+          <mxGeometry as="geometry" x="2310" y="968" width="38" height="38" />
+        </mxCell>
+        <mxCell id="done-label" value="退货完成" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=18;fontColor=#263238;strokeColor=#263238;strokeWidth=1.5;fillColor=#FFFFFF;text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=14;fontColor=#263238;">
+          <mxGeometry as="geometry" x="2268" y="1012" width="125" height="38" />
+        </mxCell>
+        <mxCell id="edge-1" value="" edge="1" parent="1" source="request" target="review" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontFamily=Helvetica;fontSize=14;fontColor=#263238;strokeColor=#263238;strokeWidth=1.5;endArrow=block;endFill=1;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0;entryY=0.5;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge-2" value="" edge="1" parent="1" source="review" target="eligible" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontFamily=Helvetica;fontSize=14;fontColor=#263238;strokeColor=#263238;strokeWidth=1.5;endArrow=block;endFill=1;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0;entryY=0.5;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge-3" value="是" edge="1" parent="1" source="eligible" target="instructions" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontFamily=Helvetica;fontSize=14;fontColor=#263238;strokeColor=#263238;strokeWidth=1.5;endArrow=block;endFill=1;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0;entryY=0.5;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge-4" value="否" edge="1" parent="1" source="eligible" target="reject" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontFamily=Helvetica;fontSize=14;fontColor=#263238;strokeColor=#263238;strokeWidth=1.5;endArrow=block;endFill=1;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0;entryY=0.5;">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="527" y="541" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-5" value="" edge="1" parent="1" source="reject" target="rejected" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontFamily=Helvetica;fontSize=14;fontColor=#263238;strokeColor=#263238;strokeWidth=1.5;endArrow=block;endFill=1;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0;entryY=0.5;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge-6" value="" edge="1" parent="1" source="instructions" target="receive" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontFamily=Helvetica;fontSize=14;fontColor=#263238;strokeColor=#263238;strokeWidth=1.5;endArrow=block;endFill=1;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0;entryY=0.5;">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="835" y="411" />
+              <mxPoint x="835" y="716" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-7" value="" edge="1" parent="1" source="receive" target="inspect" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontFamily=Helvetica;fontSize=14;fontColor=#263238;strokeColor=#263238;strokeWidth=1.5;endArrow=block;endFill=1;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0;entryY=0.5;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge-8" value="" edge="1" parent="1" source="inspect" target="quality" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontFamily=Helvetica;fontSize=14;fontColor=#263238;strokeColor=#263238;strokeWidth=1.5;endArrow=block;endFill=1;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0;entryY=0.5;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge-9" value="是" edge="1" parent="1" source="quality" target="restock" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontFamily=Helvetica;fontSize=14;fontColor=#263238;strokeColor=#263238;strokeWidth=1.5;endArrow=block;endFill=1;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0;entryY=0.5;">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="1450" y="716" />
+              <mxPoint x="1450" y="666" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-10" value="否" edge="1" parent="1" source="quality" target="partial" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontFamily=Helvetica;fontSize=14;fontColor=#263238;strokeColor=#263238;strokeWidth=1.5;endArrow=block;endFill=1;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0;entryY=0.5;">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="1387" y="796" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-11" value="" edge="1" parent="1" source="partial" target="offer" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontFamily=Helvetica;fontSize=14;fontColor=#263238;strokeColor=#263238;strokeWidth=1.5;endArrow=block;endFill=1;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0;entryY=0.5;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge-12" value="" edge="1" parent="1" source="offer" target="answer" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontFamily=Helvetica;fontSize=14;fontColor=#263238;strokeColor=#263238;strokeWidth=1.5;endArrow=block;endFill=1;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0;entryY=0.5;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge-13" value="" edge="1" parent="1" source="answer" target="accepted" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontFamily=Helvetica;fontSize=14;fontColor=#263238;strokeColor=#263238;strokeWidth=1.5;endArrow=block;endFill=1;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0;entryY=0.5;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge-14" value="否" edge="1" parent="1" source="accepted" target="shipback" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontFamily=Helvetica;fontSize=14;fontColor=#263238;strokeColor=#263238;strokeWidth=1.5;endArrow=block;endFill=1;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=0;entryX=0.5;entryY=1;">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="2227" y="710" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-15" value="" edge="1" parent="1" source="shipback" target="closed" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontFamily=Helvetica;fontSize=14;fontColor=#263238;strokeColor=#263238;strokeWidth=1.5;endArrow=block;endFill=1;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0;entryY=0.5;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge-16" value="全额" edge="1" parent="1" source="restock" target="merge" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontFamily=Helvetica;fontSize=14;fontColor=#263238;strokeColor=#263238;strokeWidth=1.5;endArrow=block;endFill=1;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0.5;entryY=0;">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="1710" y="666" />
+              <mxPoint x="1710" y="920" />
+              <mxPoint x="1757" y="920" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-17" value="是 · 按协商金额" edge="1" parent="1" source="accepted" target="merge" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontFamily=Helvetica;fontSize=14;fontColor=#263238;strokeColor=#263238;strokeWidth=1.5;endArrow=block;endFill=1;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0;entryY=0.5;">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="2227" y="870" />
+              <mxPoint x="1695" y="870" />
+              <mxPoint x="1695" y="987" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-18" value="" edge="1" parent="1" source="merge" target="pay" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontFamily=Helvetica;fontSize=14;fontColor=#263238;strokeColor=#263238;strokeWidth=1.5;endArrow=block;endFill=1;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0;entryY=0.5;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge-19" value="" edge="1" parent="1" source="pay" target="notify" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontFamily=Helvetica;fontSize=14;fontColor=#263238;strokeColor=#263238;strokeWidth=1.5;endArrow=block;endFill=1;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0;entryY=0.5;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge-20" value="" edge="1" parent="1" source="notify" target="done" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontFamily=Helvetica;fontSize=14;fontColor=#263238;strokeColor=#263238;strokeWidth=1.5;endArrow=block;endFill=1;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0;entryY=0.5;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge-21" value="退货申请" edge="1" parent="1" source="customer" target="request" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontFamily=Helvetica;fontSize=14;fontColor=#176B87;strokeColor=#176B87;strokeWidth=1.5;endArrow=block;endFill=1;labelBackgroundColor=#FFFFFF;exitX=0.072;exitY=1;entryX=0.5;entryY=0;dashed=1;dashPattern=7 5;startArrow=oval;startFill=0;endArrow=open;endFill=0;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge-22" value="退货指引" edge="1" parent="1" source="instructions" target="customer" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontFamily=Helvetica;fontSize=14;fontColor=#176B87;strokeColor=#176B87;strokeWidth=1.5;endArrow=block;endFill=1;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=0;entryX=0.287;entryY=1;dashed=1;dashPattern=7 5;startArrow=oval;startFill=0;endArrow=open;endFill=0;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge-23" value="拒绝原因" edge="1" parent="1" source="reject" target="customer" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontFamily=Helvetica;fontSize=14;fontColor=#176B87;strokeColor=#176B87;strokeWidth=1.5;endArrow=block;endFill=1;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0.328;entryY=1;dashed=1;dashPattern=7 5;startArrow=oval;startFill=0;endArrow=open;endFill=0;">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="815" y="541" />
+              <mxPoint x="815" y="270" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-24" value="折价方案" edge="1" parent="1" source="offer" target="customer" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontFamily=Helvetica;fontSize=14;fontColor=#176B87;strokeColor=#176B87;strokeWidth=1.5;endArrow=block;endFill=1;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=0;entryX=0.756;entryY=1;dashed=1;dashPattern=7 5;startArrow=oval;startFill=0;endArrow=open;endFill=0;">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="1825" y="575" />
+              <mxPoint x="1825" y="260" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-25" value="客户答复" edge="1" parent="1" source="customer" target="answer" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontFamily=Helvetica;fontSize=14;fontColor=#176B87;strokeColor=#176B87;strokeWidth=1.5;endArrow=block;endFill=1;labelBackgroundColor=#FFFFFF;exitX=0.85;exitY=1;entryX=0.5;entryY=0;dashed=1;dashPattern=7 5;startArrow=oval;startFill=0;endArrow=open;endFill=0;">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="2045" y="270" />
+              <mxPoint x="2045" y="575" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-26" value="退款通知" edge="1" parent="1" source="notify" target="customer" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontFamily=Helvetica;fontSize=14;fontColor=#176B87;strokeColor=#176B87;strokeWidth=1.5;endArrow=block;endFill=1;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.995;entryY=1;dashed=1;dashPattern=7 5;startArrow=oval;startFill=0;endArrow=open;endFill=0;">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="2155" y="1090" />
+              <mxPoint x="2390" y="1090" />
+              <mxPoint x="2390" y="255" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="legend" value="实线实心箭头：池内顺序流    ·    蓝色虚线空心箭头：跨池消息流    ·    ×：排他网关    ·    粗边圆：结束事件" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=18;fontColor=#263238;strokeColor=#263238;strokeWidth=1.5;fillColor=#FFFFFF;text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=16;fontColor=#263238;">
+          <mxGeometry as="geometry" x="42" y="1170" width="2300" height="35" />
+        </mxCell>
+        <mxCell id="notes" value="范围：收到实物后的质检与退款；运输、未答复超时、退款失败补偿在独立子流程展开。此图不是可执行 BPMN XML，未做完整规范认证。" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=18;fontColor=#263238;strokeColor=#263238;strokeWidth=1.5;fillColor=#FFFFFF;text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=15;fontColor=#64717A;">
+          <mxGeometry as="geometry" x="42" y="1215" width="2330" height="35" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,146 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="drawio-everything">
+  <diagram id="08-lineage" name="字段血缘 · 从支付与退款到净收款">
+    <mxGraphModel grid="1" gridSize="10" page="1" pageWidth="1440" pageHeight="870">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="n2" value="" style="rounded=1;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=17;fontColor=#172B4D;fillColor=#FFFFFF;strokeColor=#B8C6D9;arcSize=12;spacing=10;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="0" y="0" width="1440" height="870" />
+        </mxCell>
+        <mxCell id="n3" value="DRAWIO / EVERYTHING" style="rounded=1;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=17;fontColor=#172B4D;fillColor=none;strokeColor=#B8C6D9;arcSize=12;spacing=10;strokeColor=none;align=left;verticalAlign=middle;spacing=0;fontSize=13;fontColor=#3973D6;fontStyle=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="40" y="28" width="1000" height="24" />
+        </mxCell>
+        <mxCell id="n4" value="字段血缘 · 从支付与退款到净收款" style="rounded=1;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=17;fontColor=#172B4D;fillColor=none;strokeColor=#B8C6D9;arcSize=12;spacing=10;strokeColor=none;align=left;verticalAlign=middle;spacing=0;fontSize=30;fontColor=#172B4D;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="40" y="66" width="1040" height="48" />
+        </mxCell>
+        <mxCell id="n5" value="虚构场景：按支付日归属退款 / 金额同币种，净收款不等同会计收入" style="rounded=1;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=17;fontColor=#172B4D;fillColor=none;strokeColor=#B8C6D9;arcSize=12;spacing=10;strokeColor=none;align=left;verticalAlign=middle;spacing=0;fontSize=15;fontColor=#5E6C84;fontStyle=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="40" y="121" width="1040" height="32" />
+        </mxCell>
+        <mxCell id="n6" value="原创示例 · 虚构业务内容  /  Editable in draw.io" style="rounded=1;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=17;fontColor=#172B4D;fillColor=none;strokeColor=#B8C6D9;arcSize=12;spacing=10;strokeColor=none;align=left;verticalAlign=middle;spacing=0;fontSize=12;fontColor=#6B778C;fontStyle=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="40" y="824" width="1360" height="22" />
+        </mxCell>
+        <mxCell id="n7" value="" style="rounded=1;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=17;fontColor=#172B4D;fillColor=#F1F4F8;strokeColor=#B8C6D9;arcSize=12;spacing=10;strokeColor=none;arcSize=6;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="40" y="205" width="300" height="235" />
+        </mxCell>
+        <mxCell id="n8" value="payments" style="rounded=1;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=17;fontColor=#172B4D;fillColor=none;strokeColor=#B8C6D9;arcSize=12;spacing=10;strokeColor=none;align=left;verticalAlign=middle;spacing=0;fontSize=17;fontColor=#344563;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="60" y="217" width="260" height="30" />
+        </mxCell>
+        <mxCell id="n9" value="ODS · 已成功支付" style="rounded=1;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=17;fontColor=#172B4D;fillColor=none;strokeColor=#B8C6D9;arcSize=12;spacing=10;strokeColor=none;align=left;verticalAlign=middle;spacing=0;fontSize=12;fontColor=#5E6C84;fontStyle=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="58" y="252" width="264" height="22" />
+        </mxCell>
+        <mxCell id="n10" value="payment_id" style="rounded=1;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=17;fontColor=#172B4D;fillColor=#FFFFFF;strokeColor=#B8C6D9;arcSize=12;spacing=10;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="58" y="285" width="264" height="36" />
+        </mxCell>
+        <mxCell id="n11" value="paid_date" style="rounded=1;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=17;fontColor=#172B4D;fillColor=#FFFFFF;strokeColor=#B8C6D9;arcSize=12;spacing=10;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="58" y="329" width="264" height="36" />
+        </mxCell>
+        <mxCell id="n12" value="paid_amount" style="rounded=1;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=17;fontColor=#172B4D;fillColor=#EAF2FF;strokeColor=#B8C6D9;arcSize=12;spacing=10;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="58" y="373" width="264" height="36" />
+        </mxCell>
+        <mxCell id="n13" value="" style="rounded=1;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=17;fontColor=#172B4D;fillColor=#F1F4F8;strokeColor=#B8C6D9;arcSize=12;spacing=10;strokeColor=none;arcSize=6;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="40" y="500" width="300" height="235" />
+        </mxCell>
+        <mxCell id="n14" value="refunds" style="rounded=1;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=17;fontColor=#172B4D;fillColor=none;strokeColor=#B8C6D9;arcSize=12;spacing=10;strokeColor=none;align=left;verticalAlign=middle;spacing=0;fontSize=17;fontColor=#344563;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="60" y="512" width="260" height="30" />
+        </mxCell>
+        <mxCell id="n15" value="ODS · 已成功退款" style="rounded=1;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=17;fontColor=#172B4D;fillColor=none;strokeColor=#B8C6D9;arcSize=12;spacing=10;strokeColor=none;align=left;verticalAlign=middle;spacing=0;fontSize=12;fontColor=#5E6C84;fontStyle=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="58" y="547" width="264" height="22" />
+        </mxCell>
+        <mxCell id="n16" value="payment_id" style="rounded=1;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=17;fontColor=#172B4D;fillColor=#FFFFFF;strokeColor=#B8C6D9;arcSize=12;spacing=10;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="58" y="580" width="264" height="36" />
+        </mxCell>
+        <mxCell id="n17" value="refund_amount" style="rounded=1;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=17;fontColor=#172B4D;fillColor=#EAF2FF;strokeColor=#B8C6D9;arcSize=12;spacing=10;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="58" y="624" width="264" height="36" />
+        </mxCell>
+        <mxCell id="n18" value="refund_status" style="rounded=1;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=17;fontColor=#172B4D;fillColor=#FFFFFF;strokeColor=#B8C6D9;arcSize=12;spacing=10;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="58" y="668" width="264" height="36" />
+        </mxCell>
+        <mxCell id="n19" value="" style="rounded=1;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=17;fontColor=#172B4D;fillColor=#F1F4F8;strokeColor=#B8C6D9;arcSize=12;spacing=10;strokeColor=none;arcSize=6;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="500" y="500" width="300" height="235" />
+        </mxCell>
+        <mxCell id="n20" value="refund_by_payment" style="rounded=1;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=17;fontColor=#172B4D;fillColor=none;strokeColor=#B8C6D9;arcSize=12;spacing=10;strokeColor=none;align=left;verticalAlign=middle;spacing=0;fontSize=17;fontColor=#344563;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="520" y="512" width="260" height="30" />
+        </mxCell>
+        <mxCell id="n21" value="DWD · 按原支付汇总" style="rounded=1;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=17;fontColor=#172B4D;fillColor=none;strokeColor=#B8C6D9;arcSize=12;spacing=10;strokeColor=none;align=left;verticalAlign=middle;spacing=0;fontSize=12;fontColor=#5E6C84;fontStyle=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="518" y="547" width="264" height="22" />
+        </mxCell>
+        <mxCell id="n22" value="payment_id" style="rounded=1;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=17;fontColor=#172B4D;fillColor=#FFFFFF;strokeColor=#B8C6D9;arcSize=12;spacing=10;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="518" y="580" width="264" height="36" />
+        </mxCell>
+        <mxCell id="n23" value="refunded_amount" style="rounded=1;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=17;fontColor=#172B4D;fillColor=#EAF2FF;strokeColor=#B8C6D9;arcSize=12;spacing=10;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="518" y="624" width="264" height="36" />
+        </mxCell>
+        <mxCell id="n24" value="refund_count" style="rounded=1;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=17;fontColor=#172B4D;fillColor=#FFFFFF;strokeColor=#B8C6D9;arcSize=12;spacing=10;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="518" y="668" width="264" height="36" />
+        </mxCell>
+        <mxCell id="n25" value="" style="rounded=1;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=17;fontColor=#172B4D;fillColor=#F1F4F8;strokeColor=#B8C6D9;arcSize=12;spacing=10;strokeColor=none;arcSize=6;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="500" y="205" width="300" height="235" />
+        </mxCell>
+        <mxCell id="n26" value="payment_net" style="rounded=1;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=17;fontColor=#172B4D;fillColor=none;strokeColor=#B8C6D9;arcSize=12;spacing=10;strokeColor=none;align=left;verticalAlign=middle;spacing=0;fontSize=17;fontColor=#344563;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="520" y="217" width="260" height="30" />
+        </mxCell>
+        <mxCell id="n27" value="DWD · 一笔支付一行" style="rounded=1;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=17;fontColor=#172B4D;fillColor=none;strokeColor=#B8C6D9;arcSize=12;spacing=10;strokeColor=none;align=left;verticalAlign=middle;spacing=0;fontSize=12;fontColor=#5E6C84;fontStyle=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="518" y="252" width="264" height="22" />
+        </mxCell>
+        <mxCell id="n28" value="payment_id" style="rounded=1;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=17;fontColor=#172B4D;fillColor=#FFFFFF;strokeColor=#B8C6D9;arcSize=12;spacing=10;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="518" y="285" width="264" height="36" />
+        </mxCell>
+        <mxCell id="n29" value="paid_date" style="rounded=1;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=17;fontColor=#172B4D;fillColor=#FFFFFF;strokeColor=#B8C6D9;arcSize=12;spacing=10;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="518" y="329" width="264" height="36" />
+        </mxCell>
+        <mxCell id="n30" value="net_amount" style="rounded=1;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=17;fontColor=#172B4D;fillColor=#EAF2FF;strokeColor=#B8C6D9;arcSize=12;spacing=10;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="518" y="373" width="264" height="36" />
+        </mxCell>
+        <mxCell id="n31" value="" style="rounded=1;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=17;fontColor=#172B4D;fillColor=#F1F4F8;strokeColor=#B8C6D9;arcSize=12;spacing=10;strokeColor=none;arcSize=6;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1100" y="205" width="300" height="235" />
+        </mxCell>
+        <mxCell id="n32" value="daily_net_receipts" style="rounded=1;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=17;fontColor=#172B4D;fillColor=none;strokeColor=#B8C6D9;arcSize=12;spacing=10;strokeColor=none;align=left;verticalAlign=middle;spacing=0;fontSize=17;fontColor=#344563;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1120" y="217" width="260" height="30" />
+        </mxCell>
+        <mxCell id="n33" value="DWS · 支付日 × 币种" style="rounded=1;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=17;fontColor=#172B4D;fillColor=none;strokeColor=#B8C6D9;arcSize=12;spacing=10;strokeColor=none;align=left;verticalAlign=middle;spacing=0;fontSize=12;fontColor=#5E6C84;fontStyle=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1118" y="252" width="264" height="22" />
+        </mxCell>
+        <mxCell id="n34" value="paid_date" style="rounded=1;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=17;fontColor=#172B4D;fillColor=#FFFFFF;strokeColor=#B8C6D9;arcSize=12;spacing=10;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1118" y="285" width="264" height="36" />
+        </mxCell>
+        <mxCell id="n35" value="currency" style="rounded=1;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=17;fontColor=#172B4D;fillColor=#FFFFFF;strokeColor=#B8C6D9;arcSize=12;spacing=10;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1118" y="329" width="264" height="36" />
+        </mxCell>
+        <mxCell id="n36" value="net_receipts" style="rounded=1;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=17;fontColor=#172B4D;fillColor=#EAF2FF;strokeColor=#B8C6D9;arcSize=12;spacing=10;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1118" y="373" width="264" height="36" />
+        </mxCell>
+        <mxCell id="e37" value="金额" style="edgeStyle=orthogonalEdgeStyle;rounded=1;arcSize=16;html=0;endArrow=block;endFill=1;strokeColor=#6B7F99;strokeWidth=1.5;fontFamily=Arial;fontSize=13;fontColor=#344563;labelBackgroundColor=#FFFFFF;rounded=1;arcSize=14;strokeColor=#3973D6;strokeWidth=2;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="n12" target="n30">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="e38" value="SUM" style="edgeStyle=orthogonalEdgeStyle;rounded=1;arcSize=16;html=0;endArrow=block;endFill=1;strokeColor=#6B7F99;strokeWidth=1.5;fontFamily=Arial;fontSize=13;fontColor=#344563;labelBackgroundColor=#FFFFFF;rounded=1;arcSize=14;strokeColor=#3973D6;strokeWidth=2;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="n17" target="n23">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="e39" value="按 payment_id 左连接" style="edgeStyle=orthogonalEdgeStyle;rounded=1;arcSize=16;html=0;endArrow=block;endFill=1;strokeColor=#6B7F99;strokeWidth=1.5;fontFamily=Arial;fontSize=13;fontColor=#344563;labelBackgroundColor=#FFFFFF;rounded=1;arcSize=14;strokeColor=#3973D6;strokeWidth=2;exitX=1;exitY=0.5;entryX=0.5;entryY=1;" edge="1" parent="1" source="n23" target="n30">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="845" y="642" />
+              <mxPoint x="845" y="450" />
+              <mxPoint x="650" y="450" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e40" value="SUM / 支付日 × 币种" style="edgeStyle=orthogonalEdgeStyle;rounded=1;arcSize=16;html=0;endArrow=block;endFill=1;strokeColor=#6B7F99;strokeWidth=1.5;fontFamily=Arial;fontSize=13;fontColor=#344563;labelBackgroundColor=#FFFFFF;rounded=1;arcSize=14;strokeColor=#3973D6;strokeWidth=2;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="n30" target="n36">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="n41" value="" style="rounded=1;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=17;fontColor=#172B4D;fillColor=#E6F5F0;strokeColor=#B8C6D9;arcSize=12;spacing=10;strokeColor=none;arcSize=6;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="920" y="500" width="480" height="235" />
+        </mxCell>
+        <mxCell id="n42" value="口径与质量约束" style="rounded=1;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=17;fontColor=#172B4D;fillColor=none;strokeColor=#B8C6D9;arcSize=12;spacing=10;strokeColor=none;align=left;verticalAlign=middle;spacing=0;fontSize=17;fontColor=#344563;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="940" y="512" width="440" height="30" />
+        </mxCell>
+        <mxCell id="n43" value="net_amount = paid_amount − COALESCE(refunded_amount, 0)&#10;&#10;退款先聚合，避免一对多连接放大支付额。&#10;退款回溯到原支付日；日期分区需重算。&#10;检查：支付键唯一、币种一致、退款不超支付。" style="rounded=1;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=17;fontColor=#172B4D;fillColor=none;strokeColor=#B8C6D9;arcSize=12;spacing=10;strokeColor=none;align=left;verticalAlign=middle;spacing=0;fontSize=14;fontColor=#172B4D;fontStyle=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="940" y="548" width="440" height="165" />
+        </mxCell>
+        <mxCell id="n44" value="蓝色：当前关注的金额路径。灰色字段仅作上下文；非焦点依赖省略。币种过滤与日期映射在模型层处理。" style="rounded=1;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=17;fontColor=#172B4D;fillColor=none;strokeColor=#B8C6D9;arcSize=12;spacing=10;strokeColor=none;align=left;verticalAlign=middle;spacing=0;fontSize=13;fontColor=#5E6C84;fontStyle=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="40" y="780" width="1360" height="42" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,107 @@
+{
+  "scope": "Refreshed eleven fictional scenario examples; XML and visual review, not general standards certification",
+  "checks": [
+    "15 gallery XML IDs/references/geometry and preview checks passed",
+    "README local links and all 15 preview/source pairings passed",
+    "negative regression rejects deliberately mismatched preview/source pair",
+    "both generators reproduce 11 source XML files byte-for-byte",
+    "all 11 scenario PNGs exported by draw.io and visually reviewed; affected diagrams re-exported after fixes",
+    "skill quick_validate passed",
+    "independent review: network firewall responsibility corrected; no remaining required findings"
+  ],
+  "artifacts": [
+    {
+      "file": "examples/01-flow.drawio",
+      "sha256": "678aa859c601cb3087ccd615b9c6d2bdd509ec4ee874b82fa3455286b0beced6"
+    },
+    {
+      "file": "examples/01-flow.png",
+      "sha256": "017c67d4a78d98229627d95aa96a58fc01b3b05559aa2c9e12c0ed391e9e395d"
+    },
+    {
+      "file": "examples/02-swimlane.drawio",
+      "sha256": "714d74950d51f0381cabf0c2ebb90c3623edf4bcc4af2419214a0056310c8a30"
+    },
+    {
+      "file": "examples/02-swimlane.png",
+      "sha256": "ebaf67ba052692906effc5ca1e2199ca0311c6a02a5334170bffc5d80a2f8471"
+    },
+    {
+      "file": "examples/03-cloud.drawio",
+      "sha256": "c73e654e9bfc4472210690c332ea091b57a5bd49a207bfcb68929f099db6df7e"
+    },
+    {
+      "file": "examples/03-cloud.png",
+      "sha256": "7594e96625f4249b2392e37b6743a932e52ffed654b7e5009b9d8a24068332fd"
+    },
+    {
+      "file": "examples/04-cluster.drawio",
+      "sha256": "8024f7b5cb4ebd0addfd852af2fea9938c1379ac3d489e3b1db858852d34528e"
+    },
+    {
+      "file": "examples/04-cluster.png",
+      "sha256": "725683caac7ff24a084c0b573e0d56b37f44730cecf635bd23a440fbfc48632d"
+    },
+    {
+      "file": "examples/05-sequence.drawio",
+      "sha256": "646f30cd04f4fa493a39422614b12d756cc45bf4c10e60ff0c3e786ba0b52788"
+    },
+    {
+      "file": "examples/05-sequence.png",
+      "sha256": "56d0cc241ff48da75a764fb9112893d54c36f30bc554c931775fdccbd5e059ae"
+    },
+    {
+      "file": "examples/06-context.drawio",
+      "sha256": "7cb6aff4057bcd43dd956675d11cdde61f78016f9d80f9c9c9c804e679ea6796"
+    },
+    {
+      "file": "examples/06-context.png",
+      "sha256": "34adb4f37c4491705c6b6d8ee0b63bf7a0f96de755c5aea507352608ebb7c9b6"
+    },
+    {
+      "file": "examples/07-application.drawio",
+      "sha256": "776ee334fcdd3e1df7252086c21e4e2726896892ecb8bb8e65700ecd626f6b25"
+    },
+    {
+      "file": "examples/07-application.png",
+      "sha256": "7ee2a2930f50661330bcccd987bba1cde385b817bc8ae9838ab749a7975e20bb"
+    },
+    {
+      "file": "examples/08-lineage.drawio",
+      "sha256": "d4ab8e6edcef88f9154a62146b2ceb723e658d8074aeced62966afcad797438e"
+    },
+    {
+      "file": "examples/08-lineage.png",
+      "sha256": "233bb11200e33520b137a3a88b281aa36e932bd4b8f28d9fa6775a2e0fc82379"
+    },
+    {
+      "file": "examples/09-network.drawio",
+      "sha256": "90f43947033b24b5b19677e8815979816c2f410ec579bee831d7e6da2ffc6817"
+    },
+    {
+      "file": "examples/09-network.png",
+      "sha256": "d21a9b16dc81b6e44a2926d8241dd96cd9ac2d1603723290e5388bd9acb71444"
+    },
+    {
+      "file": "examples/10-capability.drawio",
+      "sha256": "659ab49647e52fbe39aeffe183948717ad5a6648a79e6da661a52d9ec65471f0"
+    },
+    {
+      "file": "examples/10-capability.png",
+      "sha256": "1b42b712fb328ac7b0bf64b8c50f000e633a3644217892a7017294b149e6b837"
+    },
+    {
+      "file": "examples/11-pipeline.drawio",
+      "sha256": "53accf93aa0667e24ceaa9350acec5cbd46540099471ef95e5b4eb79ff5a10bd"
+    },
+    {
+      "file": "examples/11-pipeline.png",
+      "sha256": "945ecbda3ab6bc143a6b94c434287bf327565a5942feab4f8d7d7723f53f32e1"
+    }
+  ],
+  "limitations": [
+    "cloud view contains two intentional route crossings without junctions",
+    "SVG overlap linter not implemented; visual checks were manual",
+    "source/preview hashes identify reviewed files but do not prove arbitrary visual or standards correctness"
+  ]
+}
