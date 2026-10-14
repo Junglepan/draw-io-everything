@@ -1,0 +1,101 @@
+{
+  "scope": "Fixed original gallery examples; not a general standards certification or personal-library migration result",
+  "checks": [
+    "skill quick_validate passed",
+    "11 XML IDs/references/geometry checks passed",
+    "11 PNG exports succeeded with individual source-file commands",
+    "local Markdown links passed",
+    "visual inspection of all 11 layouts; cloud, cluster and network routing repaired and rechecked",
+    "publication path and credential-pattern scan found no matches"
+  ],
+  "artifacts": [
+    {
+      "file": "examples/01-flow.drawio",
+      "sha256": "4a6367e21adeba145c8ba3f92936e7e3ff42392e69ade92b18c0ecf97674b243"
+    },
+    {
+      "file": "examples/01-flow.png",
+      "sha256": "d8552bd06cc338735928bc442b4f3116b425f6fe8062e378c460b344f8a2e587"
+    },
+    {
+      "file": "examples/02-swimlane.drawio",
+      "sha256": "128ebfe57b18a59a34c6c2f258568958484b82d41a5c82ca781a39050f11eb11"
+    },
+    {
+      "file": "examples/02-swimlane.png",
+      "sha256": "180b8ab0ea416454b7e39be961dcae2bf2445928b92b019835abd2bf73b0dda6"
+    },
+    {
+      "file": "examples/03-cloud.drawio",
+      "sha256": "d9ae70a52a4e7c41b6a147daab1a1fa8f1c79f1ab00996220e8790fffdbd4610"
+    },
+    {
+      "file": "examples/03-cloud.png",
+      "sha256": "d5e2033f4a02ddf7b1671a37d2e9003039e11bfe972236f709d4d49ef4a05756"
+    },
+    {
+      "file": "examples/04-cluster.drawio",
+      "sha256": "bc44a81a941e98bb9c8bb1a991bee6d79474edbd98eef5c90b1eb0ae2bd0499f"
+    },
+    {
+      "file": "examples/04-cluster.png",
+      "sha256": "a446f386e160b4e70f2c1fe4fa3c11e9456bc7d6ff37d35509f255a522a2bfc9"
+    },
+    {
+      "file": "examples/05-sequence.drawio",
+      "sha256": "3d6766c8328501aef19caeddb1788a4e261ac2ba68dcd45cd46631ebad99efbb"
+    },
+    {
+      "file": "examples/05-sequence.png",
+      "sha256": "5c41e92b2995bbe7c484f5b591de0669343ba256fba38039251096e5c90cb71f"
+    },
+    {
+      "file": "examples/06-context.drawio",
+      "sha256": "e0f53361b3a8f3cf459eb648025bcbdf1f1577fedbac6c8a9753242b021f3caa"
+    },
+    {
+      "file": "examples/06-context.png",
+      "sha256": "6a2b4c54acd362a32d0873ea11f0dc698c45f144c7572e6122e8038b963247aa"
+    },
+    {
+      "file": "examples/07-application.drawio",
+      "sha256": "34f663ff5270032dad6acf2f4e786b65670f6cb4bf8870d4e51face8df601fa5"
+    },
+    {
+      "file": "examples/07-application.png",
+      "sha256": "8e4a942ed82d2b4a067adac16a754ff25009dee8f75eb8c991b6e4081bbaeae2"
+    },
+    {
+      "file": "examples/08-lineage.drawio",
+      "sha256": "15d477eded4fe92eedcc84be136aecb5c6e24aa7c9895ef66efc4eaa11d02bb2"
+    },
+    {
+      "file": "examples/08-lineage.png",
+      "sha256": "f4d1681ecfe7b5a971b5f4a80f59a56364f538c52c53e2c9a6b7ff70a1724240"
+    },
+    {
+      "file": "examples/09-network.drawio",
+      "sha256": "afec2b05e6551f5f6f343d09599fa5c8ebc0b15456518d095b96f2b7e43f5222"
+    },
+    {
+      "file": "examples/09-network.png",
+      "sha256": "503bbd17f667f3e242969708890147e7abde04276f1e0a2bc0ba3a67b54bfecb"
+    },
+    {
+      "file": "examples/10-capability.drawio",
+      "sha256": "f055022321aabfc8410fd3ebf09a84f890dba41606e933ad26af1c0ed2c7af8e"
+    },
+    {
+      "file": "examples/10-capability.png",
+      "sha256": "317b9058f6ccf16da542fbcec43715cc2b82920f5685d5f0ce0266b3773eee94"
+    },
+    {
+      "file": "examples/11-pipeline.drawio",
+      "sha256": "6b73e0fb0f0568fe0b5ab5c0e7b70870ba88e51aa1f7bbaaa068da338e1aad5a"
+    },
+    {
+      "file": "examples/11-pipeline.png",
+      "sha256": "9019f61f7f9ebc633cf28865cc34daa0476a5effe1f0e3a5bf40e16c14479c57"
+    }
+  ]
+}

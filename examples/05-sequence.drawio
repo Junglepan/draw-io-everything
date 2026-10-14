@@ -1,0 +1,98 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="drawio-everything">
+  <diagram id="05-sequence" name="时序图 · 分阶段讲清交互">
+    <mxGraphModel grid="1" gridSize="10" page="1" pageWidth="1120" pageHeight="700">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="n2" value="" style="rounded=1;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=17;fontColor=#172B4D;fillColor=#FFFFFF;strokeColor=#B8C6D9;arcSize=12;spacing=10;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="0" y="0" width="1120" height="700" />
+        </mxCell>
+        <mxCell id="n3" value="DRAWIO / EVERYTHING" style="rounded=1;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=17;fontColor=#172B4D;fillColor=none;strokeColor=#B8C6D9;arcSize=12;spacing=10;strokeColor=none;align=left;verticalAlign=middle;spacing=0;fontSize=13;fontColor=#3973D6;fontStyle=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="40" y="28" width="1000" height="24" />
+        </mxCell>
+        <mxCell id="n4" value="时序图 · 分阶段讲清交互" style="rounded=1;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=17;fontColor=#172B4D;fillColor=none;strokeColor=#B8C6D9;arcSize=12;spacing=10;strokeColor=none;align=left;verticalAlign=middle;spacing=0;fontSize=30;fontColor=#172B4D;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="40" y="66" width="1040" height="48" />
+        </mxCell>
+        <mxCell id="n5" value="参与者列 / 时间自上而下 / 请求与返回分离" style="rounded=1;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=17;fontColor=#172B4D;fillColor=none;strokeColor=#B8C6D9;arcSize=12;spacing=10;strokeColor=none;align=left;verticalAlign=middle;spacing=0;fontSize=15;fontColor=#5E6C84;fontStyle=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="40" y="121" width="1040" height="32" />
+        </mxCell>
+        <mxCell id="n6" value="原创示例 · 虚构业务内容  /  Editable in draw.io" style="rounded=1;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=17;fontColor=#172B4D;fillColor=none;strokeColor=#B8C6D9;arcSize=12;spacing=10;strokeColor=none;align=left;verticalAlign=middle;spacing=0;fontSize=12;fontColor=#6B778C;fontStyle=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="40" y="654" width="1040" height="22" />
+        </mxCell>
+        <mxCell id="n7" value="用户" style="rounded=1;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=17;fontColor=#172B4D;fillColor=#EAF2FF;strokeColor=#B8C6D9;arcSize=12;spacing=10;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="60" y="190" width="180" height="55" />
+        </mxCell>
+        <mxCell id="e8" value="" style="endArrow=none;strokeColor=#A5B4C7;fontFamily=Arial;fontSize=14;labelBackgroundColor=#FFFFFF;dashed=1;" edge="1" parent="1">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="sourcePoint" x="150" y="245" />
+            <mxPoint as="targetPoint" x="150" y="600" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="n9" value="订单服务" style="rounded=1;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=17;fontColor=#172B4D;fillColor=#EAF2FF;strokeColor=#B8C6D9;arcSize=12;spacing=10;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="330" y="190" width="180" height="55" />
+        </mxCell>
+        <mxCell id="e10" value="" style="endArrow=none;strokeColor=#A5B4C7;fontFamily=Arial;fontSize=14;labelBackgroundColor=#FFFFFF;dashed=1;" edge="1" parent="1">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="sourcePoint" x="420" y="245" />
+            <mxPoint as="targetPoint" x="420" y="600" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="n11" value="库存服务" style="rounded=1;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=17;fontColor=#172B4D;fillColor=#EAF2FF;strokeColor=#B8C6D9;arcSize=12;spacing=10;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="600" y="190" width="180" height="55" />
+        </mxCell>
+        <mxCell id="e12" value="" style="endArrow=none;strokeColor=#A5B4C7;fontFamily=Arial;fontSize=14;labelBackgroundColor=#FFFFFF;dashed=1;" edge="1" parent="1">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="sourcePoint" x="690" y="245" />
+            <mxPoint as="targetPoint" x="690" y="600" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="n13" value="通知服务" style="rounded=1;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=17;fontColor=#172B4D;fillColor=#EAF2FF;strokeColor=#B8C6D9;arcSize=12;spacing=10;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="870" y="190" width="180" height="55" />
+        </mxCell>
+        <mxCell id="e14" value="" style="endArrow=none;strokeColor=#A5B4C7;fontFamily=Arial;fontSize=14;labelBackgroundColor=#FFFFFF;dashed=1;" edge="1" parent="1">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="sourcePoint" x="960" y="245" />
+            <mxPoint as="targetPoint" x="960" y="600" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="n15" value="01  创建订单" style="rounded=1;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=17;fontColor=#172B4D;fillColor=#F1F4F8;strokeColor=#B8C6D9;arcSize=12;spacing=10;strokeColor=none;align=left;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="60" y="260" width="1000" height="34" />
+        </mxCell>
+        <mxCell id="e16" value="提交订单" style="endArrow=none;strokeColor=#A5B4C7;fontFamily=Arial;fontSize=14;labelBackgroundColor=#FFFFFF;endArrow=block;endFill=1;" edge="1" parent="1">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="sourcePoint" x="150" y="325" />
+            <mxPoint as="targetPoint" x="420" y="325" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e17" value="预留库存" style="endArrow=none;strokeColor=#A5B4C7;fontFamily=Arial;fontSize=14;labelBackgroundColor=#FFFFFF;endArrow=block;endFill=1;" edge="1" parent="1">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="sourcePoint" x="420" y="380" />
+            <mxPoint as="targetPoint" x="690" y="380" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e18" value="预留成功" style="endArrow=none;strokeColor=#A5B4C7;fontFamily=Arial;fontSize=14;labelBackgroundColor=#FFFFFF;dashed=1;endArrow=open;" edge="1" parent="1">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="sourcePoint" x="690" y="435" />
+            <mxPoint as="targetPoint" x="420" y="435" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="n19" value="02  通知与响应" style="rounded=1;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=17;fontColor=#172B4D;fillColor=#F1F4F8;strokeColor=#B8C6D9;arcSize=12;spacing=10;strokeColor=none;align=left;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="60" y="470" width="1000" height="34" />
+        </mxCell>
+        <mxCell id="e20" value="异步发布创建事件" style="endArrow=none;strokeColor=#A5B4C7;fontFamily=Arial;fontSize=14;labelBackgroundColor=#FFFFFF;endArrow=open;" edge="1" parent="1">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="sourcePoint" x="420" y="535" />
+            <mxPoint as="targetPoint" x="960" y="535" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e21" value="返回订单编号" style="endArrow=none;strokeColor=#A5B4C7;fontFamily=Arial;fontSize=14;labelBackgroundColor=#FFFFFF;dashed=1;endArrow=open;" edge="1" parent="1">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="sourcePoint" x="420" y="585" />
+            <mxPoint as="targetPoint" x="150" y="585" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
