@@ -1,72 +1,87 @@
 <?xml version='1.0' encoding='utf-8'?>
 <mxfile host="drawio-everything">
-  <diagram id="07-application" name="应用资产 · 归属与状态各司其职">
-    <mxGraphModel grid="1" gridSize="10" page="1" pageWidth="1120" pageHeight="700">
+  <diagram id="07-application" name="零售应用组合 · 生命周期资产地图">
+    <mxGraphModel grid="1" gridSize="10" page="1" pageWidth="1120" pageHeight="810">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="n2" value="" style="rounded=1;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=17;fontColor=#172B4D;fillColor=#FFFFFF;strokeColor=#B8C6D9;arcSize=12;spacing=10;strokeColor=none;" vertex="1" parent="1">
-          <mxGeometry as="geometry" x="0" y="0" width="1120" height="700" />
+          <mxGeometry as="geometry" x="0" y="0" width="1120" height="810" />
         </mxCell>
         <mxCell id="n3" value="DRAWIO / EVERYTHING" style="rounded=1;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=17;fontColor=#172B4D;fillColor=none;strokeColor=#B8C6D9;arcSize=12;spacing=10;strokeColor=none;align=left;verticalAlign=middle;spacing=0;fontSize=13;fontColor=#3973D6;fontStyle=0;" vertex="1" parent="1">
           <mxGeometry as="geometry" x="40" y="28" width="1000" height="24" />
         </mxCell>
-        <mxCell id="n4" value="应用资产 · 归属与状态各司其职" style="rounded=1;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=17;fontColor=#172B4D;fillColor=none;strokeColor=#B8C6D9;arcSize=12;spacing=10;strokeColor=none;align=left;verticalAlign=middle;spacing=0;fontSize=30;fontColor=#172B4D;fontStyle=1;" vertex="1" parent="1">
+        <mxCell id="n4" value="零售应用组合 · 生命周期资产地图" style="rounded=1;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=17;fontColor=#172B4D;fillColor=none;strokeColor=#B8C6D9;arcSize=12;spacing=10;strokeColor=none;align=left;verticalAlign=middle;spacing=0;fontSize=30;fontColor=#172B4D;fontStyle=1;" vertex="1" parent="1">
           <mxGeometry as="geometry" x="40" y="66" width="1040" height="48" />
         </mxCell>
-        <mxCell id="n5" value="业务能力分组 / 等尺寸卡片 / 单一状态维度" style="rounded=1;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=17;fontColor=#172B4D;fillColor=none;strokeColor=#B8C6D9;arcSize=12;spacing=10;strokeColor=none;align=left;verticalAlign=middle;spacing=0;fontSize=15;fontColor=#5E6C84;fontStyle=0;" vertex="1" parent="1">
+        <mxCell id="n5" value="资产视图 / 以业务域归类，颜色仅编码生命周期；无连线表示本图不展示系统依赖" style="rounded=1;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=17;fontColor=#172B4D;fillColor=none;strokeColor=#B8C6D9;arcSize=12;spacing=10;strokeColor=none;align=left;verticalAlign=middle;spacing=0;fontSize=15;fontColor=#5E6C84;fontStyle=0;" vertex="1" parent="1">
           <mxGeometry as="geometry" x="40" y="121" width="1040" height="32" />
         </mxCell>
         <mxCell id="n6" value="原创示例 · 虚构业务内容  /  Editable in draw.io" style="rounded=1;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=17;fontColor=#172B4D;fillColor=none;strokeColor=#B8C6D9;arcSize=12;spacing=10;strokeColor=none;align=left;verticalAlign=middle;spacing=0;fontSize=12;fontColor=#6B778C;fontStyle=0;" vertex="1" parent="1">
-          <mxGeometry as="geometry" x="40" y="654" width="1040" height="22" />
+          <mxGeometry as="geometry" x="40" y="764" width="1040" height="22" />
         </mxCell>
         <mxCell id="n7" value="" style="rounded=1;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=17;fontColor=#172B4D;fillColor=#F1F4F8;strokeColor=#B8C6D9;arcSize=12;spacing=10;strokeColor=none;arcSize=6;" vertex="1" parent="1">
-          <mxGeometry as="geometry" x="40" y="200" width="320" height="360" />
+          <mxGeometry as="geometry" x="40" y="190" width="330" height="465" />
         </mxCell>
-        <mxCell id="n8" value="客户经营" style="rounded=1;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=17;fontColor=#172B4D;fillColor=none;strokeColor=#B8C6D9;arcSize=12;spacing=10;strokeColor=none;align=left;verticalAlign=middle;spacing=0;fontSize=17;fontColor=#344563;fontStyle=1;" vertex="1" parent="1">
-          <mxGeometry as="geometry" x="60" y="212" width="280" height="30" />
+        <mxCell id="n8" value="交易与履约" style="rounded=1;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=17;fontColor=#172B4D;fillColor=none;strokeColor=#B8C6D9;arcSize=12;spacing=10;strokeColor=none;align=left;verticalAlign=middle;spacing=0;fontSize=17;fontColor=#344563;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="60" y="202" width="290" height="30" />
         </mxCell>
-        <mxCell id="n9" value="客户门户&#10;● 使用中" style="rounded=1;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=17;fontColor=#172B4D;fillColor=#E6F5F0;strokeColor=#B8C6D9;arcSize=12;spacing=10;" vertex="1" parent="1">
-          <mxGeometry as="geometry" x="70" y="265" width="260" height="70" />
+        <mxCell id="n9" value="订单中心&#10;生命周期：稳定" style="rounded=1;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=17;fontColor=#172B4D;fillColor=#E6F5F0;strokeColor=#B8C6D9;arcSize=12;spacing=10;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="60" y="250" width="290" height="75" />
         </mxCell>
-        <mxCell id="n10" value="会员中心&#10;● 使用中" style="rounded=1;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=17;fontColor=#172B4D;fillColor=#E6F5F0;strokeColor=#B8C6D9;arcSize=12;spacing=10;" vertex="1" parent="1">
-          <mxGeometry as="geometry" x="70" y="355" width="260" height="70" />
+        <mxCell id="n10" value="库存中心&#10;生命周期：稳定" style="rounded=1;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=17;fontColor=#172B4D;fillColor=#E6F5F0;strokeColor=#B8C6D9;arcSize=12;spacing=10;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="60" y="345" width="290" height="75" />
         </mxCell>
-        <mxCell id="n11" value="活动管理&#10;● 使用中" style="rounded=1;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=17;fontColor=#172B4D;fillColor=#E6F5F0;strokeColor=#B8C6D9;arcSize=12;spacing=10;" vertex="1" parent="1">
-          <mxGeometry as="geometry" x="70" y="445" width="260" height="70" />
+        <mxCell id="n11" value="履约编排&#10;生命周期：演进" style="rounded=1;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=17;fontColor=#172B4D;fillColor=#EAF2FF;strokeColor=#B8C6D9;arcSize=12;spacing=10;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="60" y="440" width="290" height="75" />
         </mxCell>
-        <mxCell id="n12" value="" style="rounded=1;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=17;fontColor=#172B4D;fillColor=#F1F4F8;strokeColor=#B8C6D9;arcSize=12;spacing=10;strokeColor=none;arcSize=6;" vertex="1" parent="1">
-          <mxGeometry as="geometry" x="400" y="200" width="320" height="360" />
+        <mxCell id="n12" value="旧订单后台&#10;生命周期：退役" style="rounded=1;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=17;fontColor=#172B4D;fillColor=#FFF3DA;strokeColor=#B8C6D9;arcSize=12;spacing=10;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="60" y="535" width="290" height="75" />
         </mxCell>
-        <mxCell id="n13" value="交易履约" style="rounded=1;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=17;fontColor=#172B4D;fillColor=none;strokeColor=#B8C6D9;arcSize=12;spacing=10;strokeColor=none;align=left;verticalAlign=middle;spacing=0;fontSize=17;fontColor=#344563;fontStyle=1;" vertex="1" parent="1">
-          <mxGeometry as="geometry" x="420" y="212" width="280" height="30" />
+        <mxCell id="n13" value="" style="rounded=1;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=17;fontColor=#172B4D;fillColor=#F1F4F8;strokeColor=#B8C6D9;arcSize=12;spacing=10;strokeColor=none;arcSize=6;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="395" y="190" width="330" height="465" />
         </mxCell>
-        <mxCell id="n14" value="订单中心&#10;● 使用中" style="rounded=1;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=17;fontColor=#172B4D;fillColor=#E6F5F0;strokeColor=#B8C6D9;arcSize=12;spacing=10;" vertex="1" parent="1">
-          <mxGeometry as="geometry" x="430" y="265" width="260" height="70" />
+        <mxCell id="n14" value="客户与增长" style="rounded=1;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=17;fontColor=#172B4D;fillColor=none;strokeColor=#B8C6D9;arcSize=12;spacing=10;strokeColor=none;align=left;verticalAlign=middle;spacing=0;fontSize=17;fontColor=#344563;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="415" y="202" width="290" height="30" />
         </mxCell>
-        <mxCell id="n15" value="库存管理&#10;● 使用中" style="rounded=1;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=17;fontColor=#172B4D;fillColor=#E6F5F0;strokeColor=#B8C6D9;arcSize=12;spacing=10;" vertex="1" parent="1">
-          <mxGeometry as="geometry" x="430" y="355" width="260" height="70" />
+        <mxCell id="n15" value="会员中心&#10;生命周期：稳定" style="rounded=1;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=17;fontColor=#172B4D;fillColor=#E6F5F0;strokeColor=#B8C6D9;arcSize=12;spacing=10;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="415" y="250" width="290" height="75" />
         </mxCell>
-        <mxCell id="n16" value="配送调度&#10;● 使用中" style="rounded=1;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=17;fontColor=#172B4D;fillColor=#E6F5F0;strokeColor=#B8C6D9;arcSize=12;spacing=10;" vertex="1" parent="1">
-          <mxGeometry as="geometry" x="430" y="445" width="260" height="70" />
+        <mxCell id="n16" value="优惠券平台&#10;生命周期：稳定" style="rounded=1;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=17;fontColor=#172B4D;fillColor=#E6F5F0;strokeColor=#B8C6D9;arcSize=12;spacing=10;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="415" y="345" width="290" height="75" />
         </mxCell>
-        <mxCell id="n17" value="" style="rounded=1;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=17;fontColor=#172B4D;fillColor=#F1F4F8;strokeColor=#B8C6D9;arcSize=12;spacing=10;strokeColor=none;arcSize=6;" vertex="1" parent="1">
-          <mxGeometry as="geometry" x="760" y="200" width="320" height="360" />
+        <mxCell id="n17" value="触达编排&#10;生命周期：演进" style="rounded=1;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=17;fontColor=#172B4D;fillColor=#EAF2FF;strokeColor=#B8C6D9;arcSize=12;spacing=10;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="415" y="440" width="290" height="75" />
         </mxCell>
-        <mxCell id="n18" value="经营分析" style="rounded=1;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=17;fontColor=#172B4D;fillColor=none;strokeColor=#B8C6D9;arcSize=12;spacing=10;strokeColor=none;align=left;verticalAlign=middle;spacing=0;fontSize=17;fontColor=#344563;fontStyle=1;" vertex="1" parent="1">
-          <mxGeometry as="geometry" x="780" y="212" width="280" height="30" />
+        <mxCell id="n18" value="旧积分门户&#10;生命周期：退役" style="rounded=1;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=17;fontColor=#172B4D;fillColor=#FFF3DA;strokeColor=#B8C6D9;arcSize=12;spacing=10;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="415" y="535" width="290" height="75" />
         </mxCell>
-        <mxCell id="n19" value="指标平台&#10;● 使用中" style="rounded=1;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=17;fontColor=#172B4D;fillColor=#E6F5F0;strokeColor=#B8C6D9;arcSize=12;spacing=10;" vertex="1" parent="1">
-          <mxGeometry as="geometry" x="790" y="265" width="260" height="70" />
+        <mxCell id="n19" value="" style="rounded=1;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=17;fontColor=#172B4D;fillColor=#F1F4F8;strokeColor=#B8C6D9;arcSize=12;spacing=10;strokeColor=none;arcSize=6;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="750" y="190" width="330" height="465" />
         </mxCell>
-        <mxCell id="n20" value="报表中心&#10;● 使用中" style="rounded=1;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=17;fontColor=#172B4D;fillColor=#E6F5F0;strokeColor=#B8C6D9;arcSize=12;spacing=10;" vertex="1" parent="1">
-          <mxGeometry as="geometry" x="790" y="355" width="260" height="70" />
+        <mxCell id="n20" value="经营与支撑" style="rounded=1;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=17;fontColor=#172B4D;fillColor=none;strokeColor=#B8C6D9;arcSize=12;spacing=10;strokeColor=none;align=left;verticalAlign=middle;spacing=0;fontSize=17;fontColor=#344563;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="770" y="202" width="290" height="30" />
         </mxCell>
-        <mxCell id="n21" value="旧版看板&#10;△ 计划退役" style="rounded=1;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=17;fontColor=#172B4D;fillColor=#FFF3DA;strokeColor=#B8C6D9;arcSize=12;spacing=10;" vertex="1" parent="1">
-          <mxGeometry as="geometry" x="790" y="445" width="260" height="70" />
+        <mxCell id="n21" value="商品中心&#10;生命周期：稳定" style="rounded=1;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=17;fontColor=#172B4D;fillColor=#E6F5F0;strokeColor=#B8C6D9;arcSize=12;spacing=10;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="770" y="250" width="290" height="75" />
         </mxCell>
-        <mxCell id="n22" value="● 使用中     △ 计划退役     |     卡片面积不表示成本或重要性" style="rounded=1;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=17;fontColor=#172B4D;fillColor=none;strokeColor=#B8C6D9;arcSize=12;spacing=10;strokeColor=none;align=left;verticalAlign=middle;spacing=0;fontSize=15;fontColor=#172B4D;fontStyle=0;" vertex="1" parent="1">
-          <mxGeometry as="geometry" x="60" y="590" width="1000" height="35" />
+        <mxCell id="n22" value="结算中心&#10;生命周期：演进" style="rounded=1;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=17;fontColor=#172B4D;fillColor=#EAF2FF;strokeColor=#B8C6D9;arcSize=12;spacing=10;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="770" y="345" width="290" height="75" />
+        </mxCell>
+        <mxCell id="n23" value="经营分析&#10;生命周期：演进" style="rounded=1;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=17;fontColor=#172B4D;fillColor=#EAF2FF;strokeColor=#B8C6D9;arcSize=12;spacing=10;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="770" y="440" width="290" height="75" />
+        </mxCell>
+        <mxCell id="n24" value="报表工作台&#10;生命周期：退役" style="rounded=1;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=17;fontColor=#172B4D;fillColor=#FFF3DA;strokeColor=#B8C6D9;arcSize=12;spacing=10;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="770" y="535" width="290" height="75" />
+        </mxCell>
+        <mxCell id="n25" value="稳定  /  持续运营" style="rounded=1;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=17;fontColor=#172B4D;fillColor=#E6F5F0;strokeColor=#B8C6D9;arcSize=12;spacing=10;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="40" y="685" width="330" height="50" />
+        </mxCell>
+        <mxCell id="n26" value="演进  /  能力建设" style="rounded=1;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=17;fontColor=#172B4D;fillColor=#EAF2FF;strokeColor=#B8C6D9;arcSize=12;spacing=10;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="395" y="685" width="330" height="50" />
+        </mxCell>
+        <mxCell id="n27" value="退役  /  迁移收敛" style="rounded=1;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=17;fontColor=#172B4D;fillColor=#FFF3DA;strokeColor=#B8C6D9;arcSize=12;spacing=10;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="750" y="685" width="330" height="50" />
         </mxCell>
       </root>
     </mxGraphModel>

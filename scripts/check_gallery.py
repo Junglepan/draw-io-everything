@@ -28,4 +28,10 @@ for p in [root/'README.md',root/'SKILL.md',*list((root/'references').glob('*.md'
     for link in re.findall(r'\]\(([^)]+)\)',p.read_text()):
         if not link.startswith(('http:','https:','#')):
             assert (p.parent/link.split('#')[0]).exists(), f'{p}: missing {link}'
+# Each gallery image must match the editable source advertised directly below it.
+readme=(root/'README.md').read_text()
+pairs=re.findall(r'!\[[^\]]*\]\((examples/[^)]+\.png)\).*?\[可编辑源文件\]\((examples/[^)]+\.drawio)\)',readme,re.S)
+assert len(pairs)==len(files), 'Each diagram needs a preview/source pair in README'
+for preview,source in pairs:
+    assert Path(preview).with_suffix('.drawio') == Path(source), f'Preview/source mismatch: {preview}, {source}'
 print(f'PASS: {len(files)} XML files, IDs, parent/edge references, geometry, PNG headers/dimensions and local Markdown links.')

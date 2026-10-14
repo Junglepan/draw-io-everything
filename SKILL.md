@@ -5,12 +5,12 @@ description: Use when creating or editing draw.io diagrams, learning reusable di
 
 # drawio-everything
 
-以用户提供的优秀图例持续积累风格、模板和局部模式，再用于可编辑 draw.io 绘图。基础排版与图种语义是质量底线；不要将学习简化为提取颜色，也不要将审美偏好写成标准要求。
+以用户提供的优秀图例持续积累风格、模板和局部模式，再用于可编辑 draw.io 绘图。先明确表达目的，再准确表达关系；用布局组织信息，用风格与色彩增强可读性和美观。优先简单图形，不追求装饰复杂度。
 
 ## 按任务读取
 
 - 学习、比较图例或总结反馈：读 [learning.md](references/learning.md) 和 [library.md](references/library.md)。
-- 新建或修改图：读 [drawing.md](references/drawing.md)，再读资产索引；需要选图种时读 [selection.md](references/selection.md)。
+- 新建或修改图：读 [drawing.md](references/drawing.md) 和 [visual-design.md](references/visual-design.md)，再读资产索引；需要选图种时读 [selection.md](references/selection.md)。
 - 更新资产或长期偏好：读 [library.md](references/library.md)。只加载候选记录，不一次读取全部图例。
 
 - 复杂业务图或专业评审：读 [professional-diagrams.md](references/professional-diagrams.md)，先明确关系、异常和省略范围。

@@ -1,82 +1,122 @@
 <?xml version='1.0' encoding='utf-8'?>
 <mxfile host="drawio-everything">
-  <diagram id="04-cluster" name="集群组件 · 重复结构与控制关系">
-    <mxGraphModel grid="1" gridSize="10" page="1" pageWidth="1120" pageHeight="700">
+  <diagram id="04-cluster" name="推荐服务 · Kubernetes 组件关系">
+    <mxGraphModel grid="1" gridSize="10" page="1" pageWidth="1120" pageHeight="820">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="n2" value="" style="rounded=1;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=17;fontColor=#172B4D;fillColor=#FFFFFF;strokeColor=#B8C6D9;arcSize=12;spacing=10;strokeColor=none;" vertex="1" parent="1">
-          <mxGeometry as="geometry" x="0" y="0" width="1120" height="700" />
+          <mxGeometry as="geometry" x="0" y="0" width="1120" height="820" />
         </mxCell>
         <mxCell id="n3" value="DRAWIO / EVERYTHING" style="rounded=1;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=17;fontColor=#172B4D;fillColor=none;strokeColor=#B8C6D9;arcSize=12;spacing=10;strokeColor=none;align=left;verticalAlign=middle;spacing=0;fontSize=13;fontColor=#3973D6;fontStyle=0;" vertex="1" parent="1">
           <mxGeometry as="geometry" x="40" y="28" width="1000" height="24" />
         </mxCell>
-        <mxCell id="n4" value="集群组件 · 重复结构与控制关系" style="rounded=1;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=17;fontColor=#172B4D;fillColor=none;strokeColor=#B8C6D9;arcSize=12;spacing=10;strokeColor=none;align=left;verticalAlign=middle;spacing=0;fontSize=30;fontColor=#172B4D;fontStyle=1;" vertex="1" parent="1">
+        <mxCell id="n4" value="推荐服务 · Kubernetes 组件关系" style="rounded=1;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=17;fontColor=#172B4D;fillColor=none;strokeColor=#B8C6D9;arcSize=12;spacing=10;strokeColor=none;align=left;verticalAlign=middle;spacing=0;fontSize=30;fontColor=#172B4D;fontStyle=1;" vertex="1" parent="1">
           <mxGeometry as="geometry" x="40" y="66" width="1040" height="48" />
         </mxCell>
-        <mxCell id="n5" value="同构节点 / 独立控制面 / 控制关系不等于业务请求" style="rounded=1;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=17;fontColor=#172B4D;fillColor=none;strokeColor=#B8C6D9;arcSize=12;spacing=10;strokeColor=none;align=left;verticalAlign=middle;spacing=0;fontSize=15;fontColor=#5E6C84;fontStyle=0;" vertex="1" parent="1">
+        <mxCell id="n5" value="控制关系视图 / 蓝色表示控制面，绿色表示工作节点；虚线为观察与协调，非业务请求路径" style="rounded=1;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=17;fontColor=#172B4D;fillColor=none;strokeColor=#B8C6D9;arcSize=12;spacing=10;strokeColor=none;align=left;verticalAlign=middle;spacing=0;fontSize=15;fontColor=#5E6C84;fontStyle=0;" vertex="1" parent="1">
           <mxGeometry as="geometry" x="40" y="121" width="1040" height="32" />
         </mxCell>
         <mxCell id="n6" value="原创示例 · 虚构业务内容  /  Editable in draw.io" style="rounded=1;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=17;fontColor=#172B4D;fillColor=none;strokeColor=#B8C6D9;arcSize=12;spacing=10;strokeColor=none;align=left;verticalAlign=middle;spacing=0;fontSize=12;fontColor=#6B778C;fontStyle=0;" vertex="1" parent="1">
-          <mxGeometry as="geometry" x="40" y="654" width="1040" height="22" />
+          <mxGeometry as="geometry" x="40" y="774" width="1040" height="22" />
         </mxCell>
         <mxCell id="n7" value="" style="rounded=1;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=17;fontColor=#172B4D;fillColor=#EAF2FF;strokeColor=#B8C6D9;arcSize=12;spacing=10;strokeColor=none;arcSize=6;" vertex="1" parent="1">
-          <mxGeometry as="geometry" x="40" y="200" width="300" height="400" />
+          <mxGeometry as="geometry" x="40" y="185" width="340" height="500" />
         </mxCell>
-        <mxCell id="n8" value="控制面（简化）" style="rounded=1;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=17;fontColor=#172B4D;fillColor=none;strokeColor=#B8C6D9;arcSize=12;spacing=10;strokeColor=none;align=left;verticalAlign=middle;spacing=0;fontSize=17;fontColor=#344563;fontStyle=1;" vertex="1" parent="1">
-          <mxGeometry as="geometry" x="60" y="212" width="260" height="30" />
+        <mxCell id="n8" value="控制平面" style="rounded=1;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=17;fontColor=#172B4D;fillColor=none;strokeColor=#B8C6D9;arcSize=12;spacing=10;strokeColor=none;align=left;verticalAlign=middle;spacing=0;fontSize=17;fontColor=#344563;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="60" y="197" width="300" height="30" />
         </mxCell>
-        <mxCell id="n9" value="API Server" style="rounded=1;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=17;fontColor=#172B4D;fillColor=#FFFFFF;strokeColor=#B8C6D9;arcSize=12;spacing=10;" vertex="1" parent="1">
-          <mxGeometry as="geometry" x="100" y="290" width="180" height="65" />
+        <mxCell id="n9" value="API Server&#10;统一集群 API" style="rounded=1;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=17;fontColor=#172B4D;fillColor=#FFFFFF;strokeColor=#B8C6D9;arcSize=12;spacing=10;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="75" y="245" width="270" height="70" />
         </mxCell>
-        <mxCell id="n10" value="Scheduler" style="rounded=1;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=17;fontColor=#172B4D;fillColor=#FFFFFF;strokeColor=#B8C6D9;arcSize=12;spacing=10;" vertex="1" parent="1">
-          <mxGeometry as="geometry" x="100" y="415" width="180" height="65" />
+        <mxCell id="n10" value="etcd&#10;集群状态存储" style="rounded=1;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=17;fontColor=#172B4D;fillColor=#FFFFFF;strokeColor=#B8C6D9;arcSize=12;spacing=10;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="75" y="355" width="270" height="65" />
         </mxCell>
-        <mxCell id="e11" value="API" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#6B7F99;strokeWidth=1.5;fontFamily=Arial;fontSize=13;fontColor=#344563;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="n10" target="n9">
+        <mxCell id="n11" value="Scheduler&#10;为待调度 Pod 选择节点" style="rounded=1;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=17;fontColor=#172B4D;fillColor=#FFFFFF;strokeColor=#B8C6D9;arcSize=12;spacing=10;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="75" y="465" width="270" height="65" />
+        </mxCell>
+        <mxCell id="n12" value="Controller Manager&#10;期望状态协调" style="rounded=1;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=17;fontColor=#172B4D;fillColor=#FFFFFF;strokeColor=#B8C6D9;arcSize=12;spacing=10;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="75" y="575" width="270" height="65" />
+        </mxCell>
+        <mxCell id="e13" value="持久化" style="edgeStyle=orthogonalEdgeStyle;rounded=1;arcSize=16;html=0;endArrow=block;endFill=1;strokeColor=#6B7F99;strokeWidth=1.5;fontFamily=Arial;fontSize=13;fontColor=#344563;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="n9" target="n10">
           <mxGeometry as="geometry" relative="1" />
         </mxCell>
-        <mxCell id="n12" value="" style="rounded=1;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=17;fontColor=#172B4D;fillColor=#E6F5F0;strokeColor=#B8C6D9;arcSize=12;spacing=10;strokeColor=none;arcSize=6;" vertex="1" parent="1">
-          <mxGeometry as="geometry" x="420" y="200" width="310" height="400" />
-        </mxCell>
-        <mxCell id="n13" value="工作节点 1" style="rounded=1;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=17;fontColor=#172B4D;fillColor=none;strokeColor=#B8C6D9;arcSize=12;spacing=10;strokeColor=none;align=left;verticalAlign=middle;spacing=0;fontSize=17;fontColor=#344563;fontStyle=1;" vertex="1" parent="1">
-          <mxGeometry as="geometry" x="440" y="212" width="270" height="30" />
-        </mxCell>
-        <mxCell id="n14" value="kubelet" style="rounded=1;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=17;fontColor=#172B4D;fillColor=#FFFFFF;strokeColor=#B8C6D9;arcSize=12;spacing=10;" vertex="1" parent="1">
-          <mxGeometry as="geometry" x="480" y="290" width="190" height="65" />
-        </mxCell>
-        <mxCell id="n15" value="应用 Pod" style="rounded=1;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=17;fontColor=#172B4D;fillColor=#FFFFFF;strokeColor=#B8C6D9;arcSize=12;spacing=10;" vertex="1" parent="1">
-          <mxGeometry as="geometry" x="480" y="415" width="190" height="65" />
-        </mxCell>
-        <mxCell id="e16" value="注册 / 状态" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#6B7F99;strokeWidth=1.5;fontFamily=Arial;fontSize=13;fontColor=#344563;labelBackgroundColor=#FFFFFF;dashed=1;exitX=0.5;exitY=0;entryX=0.5;entryY=0;" edge="1" parent="1" source="n14" target="n9">
+        <mxCell id="e14" value="watch / bind" style="edgeStyle=orthogonalEdgeStyle;rounded=1;arcSize=16;html=0;endArrow=block;endFill=1;strokeColor=#6B7F99;strokeWidth=1.5;fontFamily=Arial;fontSize=13;fontColor=#344563;labelBackgroundColor=#FFFFFF;exitX=0;exitY=0.5;entryX=0;entryY=0.5;dashed=1;strokeColor=#76859A;" edge="1" parent="1" source="n11" target="n9">
           <mxGeometry as="geometry" relative="1">
             <Array as="points">
-              <mxPoint x="575" y="250" />
-              <mxPoint x="190" y="250" />
+              <mxPoint x="55" y="497" />
+              <mxPoint x="55" y="280" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="n17" value="" style="rounded=1;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=17;fontColor=#172B4D;fillColor=#E6F5F0;strokeColor=#B8C6D9;arcSize=12;spacing=10;strokeColor=none;arcSize=6;" vertex="1" parent="1">
-          <mxGeometry as="geometry" x="770" y="200" width="310" height="400" />
-        </mxCell>
-        <mxCell id="n18" value="工作节点 2" style="rounded=1;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=17;fontColor=#172B4D;fillColor=none;strokeColor=#B8C6D9;arcSize=12;spacing=10;strokeColor=none;align=left;verticalAlign=middle;spacing=0;fontSize=17;fontColor=#344563;fontStyle=1;" vertex="1" parent="1">
-          <mxGeometry as="geometry" x="790" y="212" width="270" height="30" />
-        </mxCell>
-        <mxCell id="n19" value="kubelet" style="rounded=1;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=17;fontColor=#172B4D;fillColor=#FFFFFF;strokeColor=#B8C6D9;arcSize=12;spacing=10;" vertex="1" parent="1">
-          <mxGeometry as="geometry" x="830" y="290" width="190" height="65" />
-        </mxCell>
-        <mxCell id="n20" value="应用 Pod" style="rounded=1;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=17;fontColor=#172B4D;fillColor=#FFFFFF;strokeColor=#B8C6D9;arcSize=12;spacing=10;" vertex="1" parent="1">
-          <mxGeometry as="geometry" x="830" y="415" width="190" height="65" />
-        </mxCell>
-        <mxCell id="e21" value="注册 / 状态" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#6B7F99;strokeWidth=1.5;fontFamily=Arial;fontSize=13;fontColor=#344563;labelBackgroundColor=#FFFFFF;dashed=1;exitX=0.5;exitY=0;entryX=0.5;entryY=0;" edge="1" parent="1" source="n19" target="n9">
+        <mxCell id="e15" value="watch / update" style="edgeStyle=orthogonalEdgeStyle;rounded=1;arcSize=16;html=0;endArrow=block;endFill=1;strokeColor=#6B7F99;strokeWidth=1.5;fontFamily=Arial;fontSize=13;fontColor=#344563;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=1;entryY=0.8;dashed=1;strokeColor=#76859A;" edge="1" parent="1" source="n12" target="n9">
           <mxGeometry as="geometry" relative="1">
             <Array as="points">
-              <mxPoint x="925" y="160" />
-              <mxPoint x="190" y="160" />
+              <mxPoint x="365" y="607" />
+              <mxPoint x="365" y="301" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="n22" value="虚线：组件间控制 API 通信；省略内部组件与应用流量。" style="rounded=1;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=17;fontColor=#172B4D;fillColor=none;strokeColor=#B8C6D9;arcSize=12;spacing=10;strokeColor=none;align=left;verticalAlign=middle;spacing=0;fontSize=13;fontColor=#172B4D;fontStyle=0;" vertex="1" parent="1">
-          <mxGeometry as="geometry" x="60" y="612" width="990" height="24" />
+        <mxCell id="n16" value="" style="rounded=1;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=17;fontColor=#172B4D;fillColor=#E6F5F0;strokeColor=#B8C6D9;arcSize=12;spacing=10;strokeColor=none;arcSize=6;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="460" y="185" width="290" height="500" />
+        </mxCell>
+        <mxCell id="n17" value="工作节点 A" style="rounded=1;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=17;fontColor=#172B4D;fillColor=none;strokeColor=#B8C6D9;arcSize=12;spacing=10;strokeColor=none;align=left;verticalAlign=middle;spacing=0;fontSize=17;fontColor=#344563;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="480" y="197" width="250" height="30" />
+        </mxCell>
+        <mxCell id="n18" value="kubelet&#10;观察 PodSpec · 汇报状态" style="rounded=1;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=17;fontColor=#172B4D;fillColor=#FFFFFF;strokeColor=#B8C6D9;arcSize=12;spacing=10;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="485" y="245" width="240" height="70" />
+        </mxCell>
+        <mxCell id="n19" value="容器运行时&#10;启动 / 停止容器" style="rounded=1;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=17;fontColor=#172B4D;fillColor=#FFFFFF;strokeColor=#B8C6D9;arcSize=12;spacing=10;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="485" y="375" width="240" height="70" />
+        </mxCell>
+        <mxCell id="n20" value="推荐服务 Pod&#10;应用容器 + 指标端点" style="rounded=1;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=17;fontColor=#172B4D;fillColor=#FFFFFF;strokeColor=#B8C6D9;arcSize=12;spacing=10;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="485" y="515" width="240" height="100" />
+        </mxCell>
+        <mxCell id="e21" value="API 协调" style="edgeStyle=orthogonalEdgeStyle;rounded=1;arcSize=16;html=0;endArrow=block;endFill=1;strokeColor=#6B7F99;strokeWidth=1.5;fontFamily=Arial;fontSize=13;fontColor=#344563;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=0;entryX=0.5;entryY=0;dashed=1;strokeColor=#76859A;" edge="1" parent="1" source="n18" target="n9">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="605" y="165" />
+              <mxPoint x="210" y="165" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e22" value="CRI" style="edgeStyle=orthogonalEdgeStyle;rounded=1;arcSize=16;html=0;endArrow=block;endFill=1;strokeColor=#6B7F99;strokeWidth=1.5;fontFamily=Arial;fontSize=13;fontColor=#344563;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="n18" target="n19">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="e23" value="管理生命周期" style="edgeStyle=orthogonalEdgeStyle;rounded=1;arcSize=16;html=0;endArrow=block;endFill=1;strokeColor=#6B7F99;strokeWidth=1.5;fontFamily=Arial;fontSize=13;fontColor=#344563;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="n19" target="n20">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="n24" value="" style="rounded=1;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=17;fontColor=#172B4D;fillColor=#E6F5F0;strokeColor=#B8C6D9;arcSize=12;spacing=10;strokeColor=none;arcSize=6;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="790" y="185" width="290" height="500" />
+        </mxCell>
+        <mxCell id="n25" value="工作节点 B" style="rounded=1;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=17;fontColor=#172B4D;fillColor=none;strokeColor=#B8C6D9;arcSize=12;spacing=10;strokeColor=none;align=left;verticalAlign=middle;spacing=0;fontSize=17;fontColor=#344563;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="810" y="197" width="250" height="30" />
+        </mxCell>
+        <mxCell id="n26" value="kubelet&#10;观察 PodSpec · 汇报状态" style="rounded=1;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=17;fontColor=#172B4D;fillColor=#FFFFFF;strokeColor=#B8C6D9;arcSize=12;spacing=10;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="815" y="245" width="240" height="70" />
+        </mxCell>
+        <mxCell id="n27" value="容器运行时&#10;启动 / 停止容器" style="rounded=1;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=17;fontColor=#172B4D;fillColor=#FFFFFF;strokeColor=#B8C6D9;arcSize=12;spacing=10;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="815" y="375" width="240" height="70" />
+        </mxCell>
+        <mxCell id="n28" value="推荐服务 Pod&#10;应用容器 + 指标端点" style="rounded=1;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=17;fontColor=#172B4D;fillColor=#FFFFFF;strokeColor=#B8C6D9;arcSize=12;spacing=10;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="815" y="515" width="240" height="100" />
+        </mxCell>
+        <mxCell id="e29" value="API 协调" style="edgeStyle=orthogonalEdgeStyle;rounded=1;arcSize=16;html=0;endArrow=block;endFill=1;strokeColor=#6B7F99;strokeWidth=1.5;fontFamily=Arial;fontSize=13;fontColor=#344563;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=0;entryX=0.8;entryY=0;dashed=1;strokeColor=#76859A;" edge="1" parent="1" source="n26" target="n9">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="935" y="180" />
+              <mxPoint x="291" y="180" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e30" value="CRI" style="edgeStyle=orthogonalEdgeStyle;rounded=1;arcSize=16;html=0;endArrow=block;endFill=1;strokeColor=#6B7F99;strokeWidth=1.5;fontFamily=Arial;fontSize=13;fontColor=#344563;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="n26" target="n27">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="e31" value="管理生命周期" style="edgeStyle=orthogonalEdgeStyle;rounded=1;arcSize=16;html=0;endArrow=block;endFill=1;strokeColor=#6B7F99;strokeWidth=1.5;fontFamily=Arial;fontSize=13;fontColor=#344563;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="n27" target="n28">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="n32" value="业务请求经 Service / Ingress 到达 Pod，另绘流量视图；本图不将控制链路解释为请求转发链路。" style="rounded=1;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=17;fontColor=#172B4D;fillColor=none;strokeColor=#B8C6D9;arcSize=12;spacing=10;strokeColor=none;align=left;verticalAlign=middle;spacing=0;fontSize=13;fontColor=#5E6C84;fontStyle=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="40" y="725" width="1040" height="34" />
         </mxCell>
       </root>
     </mxGraphModel>

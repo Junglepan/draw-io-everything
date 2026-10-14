@@ -10,18 +10,24 @@
 
 </div>
 
-![全渠道零售系统全景](examples/advanced/retail-landscape.png)
-
 好的工程图，应该让读者迅速看清重点、层级和关系。`drawio-everything` 将基础绘图规范、图种语义和从优秀图例提炼的表达方法结合起来，帮助 AI 生成可编辑的 `.drawio` 图，并通过实际渲染检查效果。
 
 它的核心是持续学习：你提供照片、截图、原生文件或总结，skill 分别记录**风格、结构模板、局部模式**，再根据新内容选择和适配。每次学习都有来源和适用边界；个人偏好与技术验证分别记录。
+
+## 我们如何判断一张图是否好
+
+**表达目的明确 → 关系正确 → 呈现清晰 → 视觉增强。**
+
+用简单图形表达必要关系；通过比例、对齐、间距和留白组织信息。一般关系优先圆角折线，色彩用于区分业务归属、主次或状态；不以复杂图案、装饰或节点数量衡量质量。
+
+[基础美感准则](references/visual-design.md) · [专业表达准则](references/professional-diagrams.md)
 
 ## 快速开始
 
 将本仓库作为 `drawio-everything` 技能目录放入 Codex 的 skills 目录。首次安装、目标目录不存在时：
 
 ```bash
-git clone --branch codex/publish-skill-gallery \
+git clone --branch master \
   https://github.com/Junglepan/drawio-everything.git \
   "${CODEX_HOME:-$HOME/.codex}/skills/drawio-everything"
 ```
@@ -58,6 +64,8 @@ git clone --branch codex/publish-skill-gallery \
 ```
 
 ## 示例画廊
+
+按图要回答的问题选择示例。每张图均提供原生文件、预览、假设与适用范围。
 
 ## 进阶场景：接近真实工作的图
 
@@ -97,14 +105,14 @@ git clone --branch codex/publish-skill-gallery \
 
 [专业图质量准则](references/professional-diagrams.md) · [按场景选择示例](references/gallery.md)
 
-## 基础示例：11 类结构起点
+## 场景画廊：11 类常用工程图
 
 以下 11 张图由本项目使用虚构内容制作，提供原生节点、文字与连接器，可在 draw.io 中编辑。PNG 由 draw.io Desktop 实际导出；示例用于展示结构与表达方式，不构成生产架构方案或全面标准合规认证。
 
 | 类型 | 适用场景 | 设计重点 |
 | --- | --- | --- |
 | [流程图](examples/01-flow.drawio) | 操作流程、条件分流 | 主方向、条件标签与分支汇合 |
-| [泳道图](examples/02-swimlane.drawio) | 审批与跨团队交接 | 责任分区与阶段对齐；非完整 BPMN 范例 |
+| [泳道图](examples/02-swimlane.drawio) | 跨服务交接与补偿 | 责任分区与阶段对齐；非完整 BPMN 范例 |
 | [部署架构图](examples/03-cloud.drawio) | 部署方案与技术沟通 | 网络边界、服务分区与重复实例 |
 | [集群组件图](examples/04-cluster.drawio) | 组件职责与控制关系 | 控制面、工作节点与同构布局 |
 | [时序图](examples/05-sequence.drawio) | 接口调用与异步通知 | 参与者列、阶段与消息方向 |
@@ -117,7 +125,7 @@ git clone --branch codex/publish-skill-gallery \
 
 ### 流程图
 
-主方向、条件标签与分支汇合。适用于操作流程、条件分流。
+以生产发布为例，补齐自动门禁、负责人审批、灰度指标判断和回退路径。条件出口有明确去向，异常路径沿主轴两侧展开。
 
 ![流程图](examples/01-flow.png)
 
@@ -125,7 +133,7 @@ git clone --branch codex/publish-skill-gallery \
 
 ### 泳道图
 
-责任分区与阶段对齐；非完整 BPMN 范例。适用于审批与跨团队交接。
+以订单确认为例，展示订单、库存、支付和通知服务的交接与补偿。只根据已确认的支付终态关闭订单；不是严格 BPMN 图。
 
 ![泳道图](examples/02-swimlane.png)
 
@@ -133,7 +141,7 @@ git clone --branch codex/publish-skill-gallery \
 
 ### 部署架构图
 
-网络边界、服务分区与重复实例。适用于部署方案与技术沟通。
+以会员商城为例，展示双可用区 API、任务 Worker、主备数据库与消息代理，区分访问与复制关系。
 
 ![部署架构图](examples/03-cloud.png)
 
@@ -141,7 +149,7 @@ git clone --branch codex/publish-skill-gallery \
 
 ### 集群组件图
 
-控制面、工作节点与同构布局。适用于组件职责与控制关系。
+以推荐服务集群为例，展开 API Server、etcd、调度与控制器，以及工作节点内的 kubelet、运行时和 Pod。控制关系与业务流量分开。
 
 ![集群组件图](examples/04-cluster.png)
 
@@ -149,7 +157,7 @@ git clone --branch codex/publish-skill-gallery \
 
 ### 时序图
 
-参与者列、阶段与消息方向。适用于接口调用与异步通知。
+以订单创建为例，展示库存预留成功/失败、订单与 Outbox 本地事务、异步投递及通知去重，区分调用、返回和事件。
 
 ![时序图](examples/05-sequence.png)
 
@@ -157,15 +165,15 @@ git clone --branch codex/publish-skill-gallery \
 
 ### 系统上下文图
 
-同一抽象层级与关系说明。适用于系统范围与外部协作。
+以零售订单平台为中心，加入消费者、运营人员、支付、物流、商品库存、客户与消息系统；每条关系说明具体协作目的。
 
-![全渠道零售系统全景](examples/advanced/retail-landscape.png)
+![系统上下文图](examples/06-context.png)
 
 [可编辑源文件](examples/06-context.drawio) · [完整预览](examples/06-context.png)
 
 ### 应用资产图
 
-位置表达归属，颜色与符号表达状态。适用于应用盘点与生命周期。
+以零售应用组合为例，按业务域分组、用生命周期状态着色，并以文字重复标注稳定、演进和退役状态。
 
 ![应用资产图](examples/07-application.png)
 
@@ -173,7 +181,7 @@ git clone --branch codex/publish-skill-gallery \
 
 ### 数据血缘图
 
-局部展开与关注路径。适用于字段影响分析。
+以净收款为例，展示支付与退款汇总、按支付 ID 关联、空值处理和按支付日聚合；明确净收款不等同会计收入。
 
 ![数据血缘图](examples/08-lineage.png)
 
@@ -181,7 +189,7 @@ git clone --branch codex/publish-skill-gallery \
 
 ### 网络拓扑图
 
-区域、接入与共享骨干。适用于设备连接与运维总览。
+以制造园区为例，展开 WAN 边界、核心交换、三类 VLAN 接入与终端设备。连接表示网络接入，不表示业务调用方向。
 
 ![网络拓扑图](examples/09-network.png)
 
@@ -189,7 +197,7 @@ git clone --branch codex/publish-skill-gallery \
 
 ### 业务能力图
 
-层级网格与独立说明区。适用于能力目录与企业规划。
+以连锁零售为例，按客户、商品和交易履约组织能力，并单列跨域共享支撑；用名词表达能力，不混入流程步骤。
 
 ![业务能力图](examples/10-capability.png)
 
@@ -197,7 +205,7 @@ git clone --branch codex/publish-skill-gallery \
 
 ### 数据流水线图
 
-输入、处理、输出三段式。适用于采集、处理与消费。
+以订单事件运营指标为例，补齐归档、校验、无效数据、窗口聚合、迟到修正和下游消费，区分数据路径与重放路径。
 
 ![数据流水线图](examples/11-pipeline.png)
 
@@ -233,7 +241,7 @@ git clone --branch codex/publish-skill-gallery \
 SKILL.md                 技能入口与核心约定
 agents/openai.yaml       Codex 展示元数据
 references/              学习、选型、绘图与资产存储规则
-examples/                11 类基础示例 + advanced/ 下 4 个进阶场景
+examples/                11 类场景示例 + advanced/ 下 4 个进阶场景
 scripts/                 源文件生成与结构检查脚本
 ```
 
@@ -264,6 +272,14 @@ python3 scripts/check_gallery.py
 - 箭头、虚实线、边界优先表达正确语义，不能仅因美观而替换。
 - PNG 只是预览，`.drawio` 才是可编辑交付；无法渲染时必须说明未完成视觉验证。
 - 本仓库不提供全面标准审计器、自动学习服务或后台同步服务。
+
+## 项目鉴赏与持续改进
+
+调研了 Agents365、Sunwood 和 uulab 的 draw.io skill 工作流，吸收原生文件优先、内容与布局分离、检查具体视觉缺陷等经验。保留本项目的轻量定位，不直接引入第三方代码或装饰图形库。
+
+[阅读简短鉴赏与取舍](docs/skill-project-review.md)
+
+每次新图例学习都应留下：**观察依据 → 可复用规则 → 适用边界 → 迁移验证**。新增风格与已有风格可以并存，持续迭代不等于不断叠加规则。
 
 ## 参考与贡献
 
