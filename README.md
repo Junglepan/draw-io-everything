@@ -10,7 +10,7 @@
 
 </div>
 
-![系统上下文图](examples/06-context.png)
+![全渠道零售系统全景](examples/advanced/retail-landscape.png)
 
 好的工程图，应该让读者迅速看清重点、层级和关系。`drawio-everything` 将基础绘图规范、图种语义和从优秀图例提炼的表达方法结合起来，帮助 AI 生成可编辑的 `.drawio` 图，并通过实际渲染检查效果。
 
@@ -58,6 +58,46 @@ git clone --branch codex/publish-skill-gallery \
 ```
 
 ## 示例画廊
+
+## 进阶场景：接近真实工作的图
+
+四个独立的虚构场景展示更高的信息密度。分别采用系统边界、协作泳道、字段路径与循环控制的表达方式；不把所有图种套进同一种卡片布局。点击预览可查看大图，源文件可直接在 draw.io 编辑。
+
+### 全渠道零售 · 系统全景
+
+面向架构评审：人员与系统保持同一层级，组织边界区分内部能力和外部合作方；每条关系说明业务目的，节点给出类型与职责。
+
+![全渠道零售系统全景](examples/advanced/retail-landscape.png)
+
+[可编辑源文件](examples/advanced/retail-landscape.drawio) · [完整预览](examples/advanced/retail-landscape.png)
+
+### 跨组织退货 · 协作流程
+
+面向流程评审：区分客户与企业参与者、企业内部岗位交接以及条件分支。采用 BPMN 表示法子集，按声明范围检查，不声称完整规范认证。
+
+![跨组织退货协作](examples/advanced/returns-collaboration.png)
+
+[可编辑源文件](examples/advanced/returns-collaboration.drawio) · [完整预览](examples/advanced/returns-collaboration.png)
+
+### 收入指标 · 字段级血缘
+
+面向数据治理：展开相关字段，说明转换与指标口径；突出选定影响路径，同时保留来源和下游消费者。静态图中不放置无法操作的筛选或翻页控件。
+
+![收入指标字段血缘](examples/advanced/revenue-lineage.png)
+
+[可编辑源文件](examples/advanced/revenue-lineage.drawio) · [完整预览](examples/advanced/revenue-lineage.png)
+
+### 批量对账 · 循环与异常收敛
+
+面向实现评审：主流程之外交代重试上限、循环推进、失败处理与取消出口，避免只有成功路径的演示流程。
+
+![批量对账流程](examples/advanced/reconciliation-flow.png)
+
+[可编辑源文件](examples/advanced/reconciliation-flow.drawio) · [完整预览](examples/advanced/reconciliation-flow.png)
+
+[专业图质量准则](references/professional-diagrams.md) · [按场景选择示例](references/gallery.md)
+
+## 基础示例：11 类结构起点
 
 以下 11 张图由本项目使用虚构内容制作，提供原生节点、文字与连接器，可在 draw.io 中编辑。PNG 由 draw.io Desktop 实际导出；示例用于展示结构与表达方式，不构成生产架构方案或全面标准合规认证。
 
@@ -119,7 +159,7 @@ git clone --branch codex/publish-skill-gallery \
 
 同一抽象层级与关系说明。适用于系统范围与外部协作。
 
-![系统上下文图](examples/06-context.png)
+![全渠道零售系统全景](examples/advanced/retail-landscape.png)
 
 [可编辑源文件](examples/06-context.drawio) · [完整预览](examples/06-context.png)
 
@@ -193,8 +233,8 @@ git clone --branch codex/publish-skill-gallery \
 SKILL.md                 技能入口与核心约定
 agents/openai.yaml       Codex 展示元数据
 references/              学习、选型、绘图与资产存储规则
-examples/                11 类原创 .drawio 源文件与 PNG
-scripts/build_gallery.py 示例源文件生成脚本
+examples/                11 类基础示例 + advanced/ 下 4 个进阶场景
+scripts/                 源文件生成与结构检查脚本
 ```
 
 [图种选择](references/selection.md) · [图例学习](references/learning.md) · [资产约定](references/library.md) · [绘图与验证](references/drawing.md) · [画廊适配说明](references/gallery.md)
@@ -203,9 +243,11 @@ scripts/build_gallery.py 示例源文件生成脚本
 
 ```bash
 python3 scripts/build_gallery.py
+python3 scripts/build_advanced_architecture.py
+python3 scripts/build_advanced_process.py
 
 # macOS，已安装 draw.io Desktop；其他系统改为对应可执行文件路径
-for diagram in examples/*.drawio; do
+for diagram in examples/*.drawio examples/advanced/*.drawio; do
   /Applications/draw.io.app/Contents/MacOS/draw.io \
     -x -f png -s 1.5 -o "${diagram%.drawio}.png" "$diagram"
 done

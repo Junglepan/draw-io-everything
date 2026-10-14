@@ -13,6 +13,7 @@ description: Use when creating or editing draw.io diagrams, learning reusable di
 - 新建或修改图：读 [drawing.md](references/drawing.md)，再读资产索引；需要选图种时读 [selection.md](references/selection.md)。
 - 更新资产或长期偏好：读 [library.md](references/library.md)。只加载候选记录，不一次读取全部图例。
 
+- 复杂业务图或专业评审：读 [professional-diagrams.md](references/professional-diagrams.md)，先明确关系、异常和省略范围。
 - 需要公开示例或空库起步：读 [gallery.md](references/gallery.md)，按需打开 `examples/` 中对应源文件。
 
 ## 资产入口

@@ -17,3 +17,14 @@
 | 数据流水线图 | [源文件](../examples/11-pipeline.drawio) | 输入、处理、输出三段式 |
 
 内容增长时先扩展组间距离、区域或拆分视图，保留同层节奏，不靠整体缩小字号。静态示例不模拟筛选、悬停或折叠交互。示例采用统一浅底以便 README 阅读；这不是要求用户所有图种共用同一风格。
+
+## 进阶场景
+
+复杂需求优先阅读 [professional-diagrams.md](professional-diagrams.md)。以下为原创固定场景，图上标明业务假设与范围。
+
+| 场景 | 原生文件 | 适配重点 |
+| --- | --- | --- |
+| 全渠道系统全景 | [源文件](../examples/advanced/retail-landscape.drawio) | 组织边界、人员和系统、关系标签、职责层次 |
+| 退货协作 | [源文件](../examples/advanced/returns-collaboration.drawio) | 跨池消息、池内交接、网关分支与结束状态 |
+| 收入字段血缘 | [源文件](../examples/advanced/revenue-lineage.drawio) | 多源关联、转换口径、字段连接与影响路径 |
+| 批量对账 | [源文件](../examples/advanced/reconciliation-flow.drawio) | 循环、重试上限、取消与异常收敛 |

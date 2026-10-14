@@ -5,8 +5,8 @@ import struct
 import xml.etree.ElementTree as E
 
 root=Path(__file__).resolve().parents[1]
-files=sorted((root/'examples').glob('*.drawio'))
-assert len(files)==11, 'Expected 11 gallery diagrams'
+files=sorted((root/'examples').rglob('*.drawio'))
+assert len(files)==15, 'Expected 11 basic and 4 advanced gallery diagrams'
 for p in files:
     tree=E.parse(p)
     cells=tree.findall('.//mxCell')
@@ -28,4 +28,4 @@ for p in [root/'README.md',root/'SKILL.md',*list((root/'references').glob('*.md'
     for link in re.findall(r'\]\(([^)]+)\)',p.read_text()):
         if not link.startswith(('http:','https:','#')):
             assert (p.parent/link.split('#')[0]).exists(), f'{p}: missing {link}'
-print('PASS: 11 XML files, IDs, parent/edge references, geometry, PNG headers/dimensions and local Markdown links.')
+print(f'PASS: {len(files)} XML files, IDs, parent/edge references, geometry, PNG headers/dimensions and local Markdown links.')
