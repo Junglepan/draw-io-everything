@@ -22,6 +22,10 @@
 
 [基础美感准则](references/visual-design.md) · [专业表达准则](references/professional-diagrams.md)
 
+## 一类图，多种表达方案
+
+同一图种可以积累多种构图、配色和局部模式。先确定表达目的与关系，再按内容规模、读者和展示尺寸选择兼容组合。新图例扩充选择，不自动替代既有方案；保持一致的是语义正确与基础美感。
+
 ## 快速开始
 
 将本仓库作为 `drawio-everything` 技能目录放入 Codex 的 skills 目录。首次安装、目标目录不存在时：
@@ -241,11 +245,21 @@ git clone --branch master \
 SKILL.md                 技能入口与核心约定
 agents/openai.yaml       Codex 展示元数据
 references/              学习、选型、绘图与资产存储规则
-examples/                11 类场景示例 + advanced/ 下 4 个进阶场景
+examples/                11 类场景示例 + advanced/ 下 5 个进阶场景
 scripts/                 源文件生成与结构检查脚本
 ```
 
 [图种选择](references/selection.md) · [图例学习](references/learning.md) · [资产约定](references/library.md) · [绘图与验证](references/drawing.md) · [画廊适配说明](references/gallery.md)
+
+## 迁移验证：退款双轴泳道
+
+将责任 × 阶段结构迁移到虚构退款场景，扩展为 4 个服务、4 个阶段，覆盖审核拒绝、未知状态查询和可重试失败。浅色泳道表达责任归属，阶段列使用中性标题；空格保留无任务的含义。
+
+![退款处理责任与阶段矩阵](examples/advanced/refund-matrix.png)
+
+[可编辑源文件](examples/advanced/refund-matrix.drawio) · [验证范围与记录](docs/refund-matrix-validation.json)
+
+此图是说明性泳道流程，并非严格 BPMN；不可重试失败转人工的路径以文字说明，未展开。验证覆盖本次布局，不保证任意规模都适用。
 
 ## 重建示例
 
@@ -253,6 +267,7 @@ scripts/                 源文件生成与结构检查脚本
 python3 scripts/build_gallery.py
 python3 scripts/build_advanced_architecture.py
 python3 scripts/build_advanced_process.py
+python3 scripts/build_refund_matrix.py
 
 # macOS，已安装 draw.io Desktop；其他系统改为对应可执行文件路径
 for diagram in examples/*.drawio examples/advanced/*.drawio; do

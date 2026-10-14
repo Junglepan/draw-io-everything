@@ -6,7 +6,7 @@ import xml.etree.ElementTree as E
 
 root=Path(__file__).resolve().parents[1]
 files=sorted((root/'examples').rglob('*.drawio'))
-assert len(files)==15, 'Expected 11 basic and 4 advanced gallery diagrams'
+assert len(files)==16, 'Expected 11 basic and 5 advanced gallery diagrams'
 for p in files:
     tree=E.parse(p)
     cells=tree.findall('.//mxCell')

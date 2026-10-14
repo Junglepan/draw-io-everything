@@ -1,0 +1,20 @@
+{
+  "scenario": "Refund workflow: 4 services x 4 stages; long Chinese labels, rejection, status query and retries",
+  "native_file": "examples/advanced/refund-matrix.drawio",
+  "preview_path": "examples/advanced/refund-matrix.png",
+  "structure_check": "passed: XML, unique IDs, endpoint and parent references, positive dimensions, PNG decoding",
+  "semantic_check": "passed within stated illustrative scope: query unknown payment status, reuse refund request ID, retry only known retryable failure",
+  "visual_check": "passed: rendered with draw.io Desktop and directly inspected; labels readable, independent loops, no observed overlap",
+  "result": "passed",
+  "date": "2026-10-14T18:09:16.203828+00:00",
+  "limitations": [
+    "Non-retryable failure handling is noted but not expanded",
+    "Not strict BPMN; arrows do not encode sync vs async",
+    "Only this 4x4 arrangement tested; empty cells preserve responsibility semantics"
+  ],
+  "hashes": {
+    "refund-matrix.drawio": "c9ec0345c36e2afd67267b2e75a396b7e91b510367a6105f949c387ecf605213",
+    "refund-matrix.png": "8eb64e318007c476eede7601d51b5bdaf9c8c3b8e3c023fea713b53f512a27c4"
+  },
+  "source_template": "responsibility-stage-matrix (local learning asset; not required to use this example)"
+}

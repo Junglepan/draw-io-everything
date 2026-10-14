@@ -28,3 +28,7 @@
 | 退货协作 | [源文件](../examples/advanced/returns-collaboration.drawio) | 跨池消息、池内交接、网关分支与结束状态 |
 | 收入字段血缘 | [源文件](../examples/advanced/revenue-lineage.drawio) | 多源关联、转换口径、字段连接与影响路径 |
 | 批量对账 | [源文件](../examples/advanced/reconciliation-flow.drawio) | 循环、重试上限、取消与异常收敛 |
+
+## 双轴泳道迁移案例
+
+[退款处理](../examples/advanced/refund-matrix.drawio)同时组织责任服务与业务阶段。适合阶段边界明确的跨服务流程；多次跨阶段往返或服务过多时，应考虑单轴泳道或子流程。此案例不作为所有泳道图的唯一构图。
