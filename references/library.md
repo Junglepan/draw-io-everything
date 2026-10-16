@@ -34,6 +34,29 @@ assets 的每条索引使用 `{id, kind, version, path, status, tags}`，kind �
 | pattern | problem、structure、adaptation_rules、semantic_constraints、artifact |
 | feedback | scope（current_diagram/asset/global）、target、request、before、after、applied、promote_to_default（默认 false） |
 
+### 观察、缺陷与前后对照
+
+复用现有 examples/、feedback/、patterns/，以字段区分反馈，不新增正向库、负向库或评分系统。以下为 schema_version=1 的增量字段约定：旧记录缺少字段时按 unknown/null/空数组读取，不自动改写历史或推断通过；新增或更新反馈时补齐对应字段。
+
+example.observations 和 feedback.observations 使用相同的观察结构。feedback 新增 observations 数组，每项保留 example 原有的 aspect、value、basis、confidence、region，并补充：
+
+| 字段 | 内容 |
+| --- | --- |
+| feedback_type | positive/negative/mixed/unknown；评价针对本条观察，不代表整图结论 |
+| source_refs | 本记录 sources 的 location 数组，指向实际来源；region 用页名、cell id 或可定位区域描述 |
+| reading_impact | 具体改善或妨碍的阅读行为；未知 null |
+| cause_hypothesis | `{explanation, status, evidence}`；status 为 untested/supported/refuted；没有假设时 null，修复前不写 supported |
+| strategy | 保留、修正或规避方法；尚未提出时 null |
+| acceptance_criteria | 可在最终渲染上核对的条件数组；负反馈不得仅写“更美观” |
+| before / after | `{source_file, preview_file, region}`，文件为真实路径，未提供或未生成的字段 null；after 整体可为 null |
+| validation | 与记录级 validation 相同的 `{status, cases}`；只评价本条观察，不能由整图导出成功自动设为 passed |
+
+每条负反馈都记录来源、区域、缺陷（value）、阅读影响、原因假设、策略、验收条件、前后对照和验证状态。未查明的项留空并说明缺口，不补造截图或原因。混合反馈可拆为共享 source_refs 的正负观察；保留项与修正项分别定位。feedback 顶层 before/after 表示本次修改的整体产物，observations 中的 before/after 定位局部；保持两者一致。
+
+user_preference 继续只记录用户明确表达的评价与范围，个人偏好不自动变成质量禁令。局部反馈仍使用 scope=current_diagram、promote_to_default=false；未经明确要求不写 defaults。发现可复用的规避方法时，可建立有版本的 pattern；example 和 feedback 可用 derived_assets 数组关联提炼产物，每项为 `{id, version}`，原始反馈保留原 kind 和来源。
+
+validation.cases 中分别记录结构、语义、可读性与审美结果，以及整体适屏和实际阅读尺寸两种检查尺度；未执行项为 null。附最终源文件和预览的哈希、所改变的变量、未解决问题与检查日期，以识别旧预览和过期结论。修复当前案例与新内容迁移是不同 case；validated 的门槛仍要求真实迁移与渲染证据，不因记录字段齐全或用户认可而放宽。
+
 style_refs 和 pattern_refs 使用 `{id, version}`，不使用模糊“最新”。骨架中的槽位描述角色与关系，不复制源图的业务事实。文字描述的骨架不是已生成的原生 draw.io 模板。
 
 defaults 按用户明确的范围设置，如 `{"architecture":{"style":{"id":"...","version":1}}}`；没有明确授权保持 `{}`。不要将 unknown 自动解析成已确认默认。
@@ -46,4 +69,4 @@ defaults 按用户明确的范围设置，如 `{"architecture":{"style":{"id":".
 4. 索引更新用同目录临时文件加原子替换；保存后回读 JSON，确认索引与记录一致。
 5. 文件写入失败则保留已有版本并报告未保存的内容，不声称记忆已更新。
 
-检索先筛 diagram_types、use_when、audiences 与 validation，再评估结构相似度。显式指定候选可使用，但交付要标未验证；无合适模板时新建布局，不硬套。
+检索先筛 diagram_types、use_when、audiences，再评估结构相似度与验证范围。索引 tags 可补充跨区、多分支、回流、长标签及缺陷类别等标签，按需读取少量相关记录：正向候选帮助选布局，负向观察帮助生成本次检查项，明确的个人偏好帮助选风格。负反馈即使 validation=not_run 也可用于提示风险，但其修复策略不能称已验证。显式指定候选可使用，但交付要标未验证；无合适模板时新建布局，不硬套。不要一次加载全部历史反馈。

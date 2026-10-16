@@ -222,11 +222,13 @@ git clone --branch master \
                 ↓
 观察：阅读顺序、分组、层级、线条、留白
                 ↓
-提炼：风格 + 结构模板 + 局部模式
+提炼：风格 + 结构模板 + 局部模式 + 缺陷经验
                 ↓
 保存候选：来源、适用条件、版本、偏好
                 ↓
 新内容迁移 → 原生结构检查 → 实际渲染 → 修正
+                ↓
+语义 → 可读性缺陷 → 审美复查 → 带验证范围的经验
 ```
 
 | 资产 | 学习什么 | 例子 |
@@ -239,6 +241,8 @@ git clone --branch master \
 
 候选记录不等于默认风格。只有明确要求才改变长期默认；只有完成新内容迁移、原生文件与渲染检查，才能将对应资产标记为已验证。拍照图的颜色和尺寸通常只做视觉估计，不伪装成精确测量。
 
+正向经验帮助选方案，负向案例帮助发现问题，个人偏好指导风格，验证结果决定可复用范围。正负反馈按具体观察与区域记录：同一张图可以保留分区结构，同时修正连线路径。缺陷记录关联阅读影响、原因假设、修正策略、验收条件和前后对照；实际案例仍存于外部个人资产库。XML 合法和导出成功不能代替最终渲染的可读性与审美复查。
+
 ## 项目结构
 
 ```text
@@ -249,7 +253,7 @@ examples/                11 类场景示例 + advanced/ 下 5 个进阶场景
 scripts/                 源文件生成与结构检查脚本
 ```
 
-[图种选择](references/selection.md) · [图例学习](references/learning.md) · [资产约定](references/library.md) · [绘图与验证](references/drawing.md) · [画廊适配说明](references/gallery.md)
+[图种选择](references/selection.md) · [图例学习](references/learning.md) · [资产约定](references/library.md) · [绘图与验证](references/drawing.md) · [质量复查](references/quality-review.md) · [画廊适配说明](references/gallery.md)
 
 ## 迁移验证：退款双轴泳道
 
