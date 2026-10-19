@@ -296,6 +296,28 @@ python3 scripts/check_gallery.py
 
 生成脚本使用标准库，负责重建本仓库固定示例，不是通用自动排版引擎。修改布局后应重新导出并检查所有受影响的图。
 
+## PlantUML 实例：跨服务订单提交
+
+购买用户通过订单服务编排缓存读取、库存预留和支付处理，包含 3 个服务、2 个 MySQL 存储与 Redis 缓存。分阶段展示缓存命中/未命中、库存不足，以及支付成功、确定失败和结果未知；未知结果不直接释放库存。
+
+![跨服务订单提交 PlantUML 时序图](examples/sequence/order-checkout/order-checkout.png)
+
+[可编辑源文件](examples/sequence/order-checkout/order-checkout.puml) · [独立样式](examples/sequence/order-checkout/styles/restrained.iuml) · [完整 PNG](examples/sequence/order-checkout/order-checkout.png) · [可缩放 SVG](examples/sequence/order-checkout/order-checkout.svg) · [验证记录](examples/sequence/order-checkout/validation.json)
+
+这是虚构场景，业务假设和省略范围写在图中。完整补偿恢复、渠道交互、MQ 与并发协议未展开。阶段分隔只组织阅读，不表示事务；完整图适合纵向阅读，投屏时建议按阶段拆分。
+
+本例实际使用 PlantUML 1.2026.9、Temurin 21.0.12.1 和 macOS PingFang SC 字体渲染。源码使用相对路径引用样式，下载时保留 `styles/` 目录。其他平台需选择已安装的中文字体，并重新检查换行和布局；本例不依赖下方预约示例的 Noto 字体运行环境。
+
+在本例目录内，用已校验的 PlantUML JAR 重建（Java 21）：
+
+```bash
+java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -jar /path/to/plantuml-1.2026.9.jar -charset UTF-8 --check-syntax order-checkout.puml
+java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -jar /path/to/plantuml-1.2026.9.jar -charset UTF-8 --check-before-run --no-error-image --format png order-checkout.puml
+java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -jar /path/to/plantuml-1.2026.9.jar -charset UTF-8 --check-before-run --no-error-image --format svg order-checkout.puml
+```
+
+JAR 下载地址与 SHA-512 见 [运行锁](scripts/plantuml-runtime.json)。本例独立存放，现有预约示例的批量渲染和四案例检查范围保持不变。
+
 ## PlantUML 时序图与验证
 
 新增的同步预约场景覆盖基础调用、存储访问、条件与激活；三个独立变体分别改变中文标签长度、参与者数量、分支结构。风格与业务内容分离，色值和参与者顺序是可调整的参考，未设为个人默认。

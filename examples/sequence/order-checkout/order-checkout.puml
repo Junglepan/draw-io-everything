@@ -1,0 +1,101 @@
+@startuml
+!include styles/restrained.iuml
+skinparam defaultFontName PingFang SC
+skinparam BoxPadding 8
+skinparam maxMessageSize 200
+autonumber "<b>00.</b>"
+title 订单提交 · 缓存读取、库存预留与支付结果
+caption 虚构场景 / 分隔线仅组织阅读 / 同步调用使用实线，返回使用虚线
+actor "购买用户" as User
+participant "订单服务\n（核心编排）" as Order
+database "商品快照缓存\n（Redis）" as Cache
+database "订单与商品存储\n（MySQL）" as OrderDB
+participant "库存服务" as Stock
+database "库存与预留记录\n（MySQL）" as StockDB
+participant "支付服务" as Pay
+
+== 01 · 读取商品与价格快照 ==
+User -> Order : 提交订单
+activate Order
+note left of Order
+  输入：商品、数量、提交幂等键。
+  本图展开首次有效提交；重复提交与鉴权另述。
+end note
+Order -> Cache : 获取有效商品快照
+Cache --> Order : 快照 / 未命中
+alt 缓存未命中
+  Order -> OrderDB : 读取商品与价格版本
+  OrderDB --> Order : 商品快照
+  Order -> Cache : 写入快照与有效期
+  Cache --> Order : 写入结果
+else 缓存命中
+  note right of Order
+    使用命中快照；有效期内价格可接受，
+    下单价固定在订单中，这是本例业务假设。
+  end note
+end
+
+== 02 · 预留库存与创建待支付订单 ==
+Order -> Stock : 预留库存（预留键）
+activate Stock
+Stock -> StockDB : 原子检查可售量并预留
+StockDB --> Stock : 预留成功 / 库存不足
+Stock --> Order : 预留结果
+deactivate Stock
+break 库存不足
+  Order --> User : 下单失败：库存不足
+end
+Order -> OrderDB : 写入待支付订单与价格快照
+OrderDB --> Order : 订单保存成功
+note over Order, Stock
+  后续以订单保存成功为前提；写入失败须取消已确认的预留，未在此展开。
+  库存预留按预留键幂等；跨服务操作不属于同一个数据库事务。
+end note
+
+== 03 · 执行支付并按终态收敛 ==
+Order -> Pay : 执行支付（支付幂等键）
+activate Pay
+note left of Pay
+  渠道交互在支付服务内部，此图不展开。
+  超时不等于支付失败；返回三类业务结果。
+end note
+Pay --> Order : 成功 / 确定失败 / 结果未知
+deactivate Pay
+alt 支付成功
+  Order -> OrderDB : 标记已支付，保存支付流水
+  OrderDB --> Order : 状态保存成功
+  Order -> Stock : 确认扣减预留库存
+  activate Stock
+  Stock -> StockDB : 幂等确认预留为已扣减
+  StockDB --> Stock : 确认成功
+  Stock --> Order : 库存确认完成
+  deactivate Stock
+  Order --> User : 下单成功
+else 支付确定失败
+  Order -> Stock : 释放预留库存
+  activate Stock
+  Stock -> StockDB : 幂等释放预留
+  StockDB --> Stock : 释放成功
+  Stock --> Order : 库存释放完成
+  deactivate Stock
+  Order -> OrderDB : 标记支付失败，关闭订单
+  OrderDB --> Order : 状态保存成功
+  Order --> User : 下单失败：支付失败
+else 支付结果未知
+  Order -> OrderDB : 保持待确认，记录支付查询键
+  OrderDB --> Order : 状态保存成功
+  note right of Order
+    暂不释放预留；由后续查询或回调确认终态。
+    预留到期处理需先核实支付结果，本图不展开。
+  end note
+  Order --> User : 处理中，可查询订单结果
+end
+deactivate Order
+legend bottom left
+  浅蓝矩形：服务    灰紫圆柱：持久存储 / 缓存（由名称区分）
+  浅黄注释：假设与范围    激活条：服务处理及等待区间
+  范围：商品有效、缓存写入失败不阻断下单；示例中的后续数据库操作均成功。
+  已支付后的落库/库存确认失败须重试与对账，不能直接回退为支付失败；本图未展开该恢复流程。
+  无 MQ；未声明消息投递、消费确认、并发或完整分布式事务协议。
+endlegend
+@enduml

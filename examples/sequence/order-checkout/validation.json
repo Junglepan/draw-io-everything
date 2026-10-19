@@ -1,0 +1,19 @@
+{
+  "plantuml_version": "1.2026.9",
+  "jar_sha512": "95250104c977ba50fca025d2ec36f92b774f41f759145dd1442804880c5e714d1afb7aaa922f6a8715e68e3c82fe8c92c4c696218bc467fc8f350843c6d3d7c9",
+  "java": "Temurin 21.0.12.1+1-LTS",
+  "font": "PingFang SC (macOS; Java font enumeration checked)",
+  "checks": {
+    "syntax": "passed",
+    "png_svg": "passed",
+    "visual": "directly inspected final PNG; readable labels, no warning banner or observed overlap",
+    "semantics": "reviewed synchronous requests and dashed replies, break on insufficient stock, exclusive payment outcomes, unknown result does not release reservation"
+  },
+  "scope": "Illustrative scenario; compensation and recovery after persistence failure are noted, not fully modeled. No MQ or concurrency protocol.",
+  "files": {
+    "order-checkout.puml": "3062f0a690c265d331dcec0b4d08d1b4b036c309357d151044c80515c13dd9d6",
+    "styles/restrained.iuml": "555eaaf6fcd54bda60852db44dc64a22a6f4d161c8160b7a6e4a2dc653887109",
+    "order-checkout.png": "096513dd88525fa0263c0e3bad9f18f376ea44544599d62d44d73641035dbf75",
+    "order-checkout.svg": "e1386ddaebbd0c5d542990b9dd4a49d4a1777333c7255a5a662ae36597019f2f"
+  }
+}
