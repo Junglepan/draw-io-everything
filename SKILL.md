@@ -1,16 +1,17 @@
 ---
-name: drawio-everything
-description: Use when creating or editing draw.io diagrams, learning reusable styles, layouts and defect-avoidance strategies from examples or positive/negative feedback, or applying previously learned diagram preferences. Also applies to follow-up requests to extract, compare, review, refine, or reuse diagram examples. Not for generic image generation or unrelated charts.
+name: draw-io-everything
+description: Use when creating or editing draw.io diagrams or PlantUML sequence diagrams, learning reusable styles, layouts and defect-avoidance strategies from examples or positive/negative feedback, or applying previously learned diagram preferences. Also applies to follow-up requests to extract, compare, review, refine, or reuse diagram examples. Not for generic image generation or unrelated charts.
 ---
 
-# drawio-everything
+# draw-io-everything
 
-从图例和具体反馈持续积累风格、模板、局部模式与缺陷经验，再用于可编辑 draw.io 绘图。正向经验帮助选方案，负向案例帮助发现问题，个人偏好指导风格，验证结果决定经验的可复用范围。先明确表达目的，再准确表达关系；用布局组织信息，用风格与色彩增强可读性和美观。优先简单图形，不追求装饰复杂度。
+从图例和具体反馈持续积累风格、模板、局部模式与缺陷经验，再用于可编辑 draw.io 图或 PlantUML 时序图。正向经验帮助选方案，负向案例帮助发现问题，个人偏好指导风格，验证结果决定经验的可复用范围。先明确表达目的，再准确表达关系；用布局组织信息，用风格与色彩增强可读性和美观。优先简单图形，不追求装饰复杂度。
 
 ## 按任务读取
 
 - 学习、比较图例或总结反馈：读 [learning.md](references/learning.md) 和 [library.md](references/library.md)。
-- 新建或修改图：读 [drawing.md](references/drawing.md) 和 [visual-design.md](references/visual-design.md)，再读资产索引；需要选图种时读 [selection.md](references/selection.md)。
+- 新建或修改 draw.io 图：读 [drawing.md](references/drawing.md) 和 [visual-design.md](references/visual-design.md)，再读资产索引；需要选图种时读 [selection.md](references/selection.md)。
+- 生成、编辑 PlantUML 时序图，学习时序图例或复用其风格：读 [sequence-diagrams.md](references/sequence-diagrams.md)，再按任务读 [learning.md](references/learning.md)、[library.md](references/library.md) 和相关资产；不将流程图的圆角正交路由规则套到时序消息。
 - 反馈修正或交付前复查：读 [quality-review.md](references/quality-review.md)；需要提炼或保存经验时，再读 [learning.md](references/learning.md) 和 [library.md](references/library.md)。
 - 更新资产或长期偏好：读 [library.md](references/library.md)。只加载候选记录，不一次读取全部图例。
 
@@ -20,6 +21,8 @@ description: Use when creating or editing draw.io diagrams, learning reusable st
 ## 资产入口
 
 默认库为 `~/.drawio-everything/library/index.json`，`~` 按当前用户主目录解析，不写死创建者路径。用户可以明确指定项目库；不要静默切换库或将项目内容带入个人默认。库不存在时按 library.md 初始化。库独立于 skill 目录，升级指令不覆盖用户资产。
+
+技能名现为 `draw-io-everything`；为兼容已有记录，个人库仍使用上述旧路径，不自动迁移目录、改写默认偏好或升级候选状态。
 
 目前是否有已学习模板，以实际索引为准。空库可以使用 drawing.md 的临时基线画图，但不能称其为用户风格。无需安装或依赖第三方 drawio skill；现有工具可按需复用，先核对接口和表示法。
 
@@ -41,4 +44,4 @@ description: Use when creating or editing draw.io diagrams, learning reusable st
 
 反馈任务：说明保留与修正的具体区域、阅读影响、修正策略、验收结果与前后对照；原因尚未验证时标假设。用户没有提供原图时，只记录描述来源，不声称已发现或修复图中缺陷。
 
-绘图任务：交付 `.drawio` 源文件与实际可用预览，说明使用的资产及版本、针对内容的适配、验证情况。未完成渲染时仍交付源文件，明确未验证视觉效果，不宣称完整通过。
+绘图任务：draw.io 交付 `.drawio` 源文件与实际可用预览；PlantUML 时序图交付 `.puml`、所需样式文件与实际渲染的 PNG/SVG，记录渲染器版本、JDK 与字体。说明使用的资产及版本、针对内容的适配和验证范围。未完成渲染时仍交付源文件，明确未验证视觉效果，不宣称完整通过；用户指定的源格式不静默替换。

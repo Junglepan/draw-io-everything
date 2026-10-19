@@ -1,0 +1,181 @@
+{
+  "scope": "新增 PlantUML 同步时序图工作流与三个适配变体；非完整 UML 认证或通用布局保证",
+  "reviewed_at": "2026-10-19T16:56:11+08:00",
+  "review_method": "Assistant read each .puml and inspected all four final PNGs using view_image; SVG text and hashes checked by script.",
+  "renderer": {
+    "plantuml_version": "1.2026.9",
+    "jar_sha512": "95250104c977ba50fca025d2ec36f92b774f41f759145dd1442804880c5e714d1afb7aaa922f6a8715e68e3c82fe8c92c4c696218bc467fc8f350843c6d3d7c9",
+    "environment": {
+      "java": "openjdk version \"21.0.12.1\" 2026-08-18\nOpenJDK Runtime Environment (build 21.0.12.1+1-1-deb13u1-Debian)\nOpenJDK 64-Bit Server VM (build 21.0.12.1+1-1-deb13u1-Debian, mixed mode, sharing)",
+      "font_family": "Noto Sans CJK SC",
+      "font_file": "/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc",
+      "font_sha256": "b76b0433203017ca80401b2ee0dd69350349871c4b19d504c34dbdd80541690a"
+    },
+    "runtime_lock_sha256": "d03b463cb39d795ac44b5e0a91684c90bed4921d3197dcd1f9dfd2f9b759cbe0"
+  },
+  "render_manifest_sha256": "19963c203a78b33055d63a814e0cbe416514dbd21eab2bc6225e571921b7b055",
+  "style_dependencies": {
+    "examples/sequence/styles/restrained.iuml": "740fd9f9db5dd3a29356abb27a745e551113a5d2ddbe929a210cf15e68753215"
+  },
+  "automated_checks": {
+    "rendered_cases": 4,
+    "png_outputs": 4,
+    "svg_outputs": 4,
+    "runtime_checksum": "passed",
+    "source_style_preview_hashes": "passed",
+    "expected_svg_labels": "passed",
+    "failure_path_tests": {
+      "executed": 5,
+      "passed": 5,
+      "failed": 0,
+      "skipped": 0,
+      "covered": [
+        "拒绝损坏的缓存 JAR",
+        "下载校验失败不安装",
+        "语法错误不产生成功清单/错误预览",
+        "零图运行失败",
+        "预览被修改后校验失败"
+      ]
+    }
+  },
+  "cases": [
+    {
+      "source": "examples/sequence/reservation-branches.puml",
+      "source_sha256": "74e01086d134636311a648dbdb35393e6307eb4bf88f0cf99d79e063630ea448",
+      "artifacts": {
+        "png": {
+          "path": "reservation-branches.png",
+          "sha256": "eb98c752e61a7b77d6a2360d35dbe2f8d0569ac574b841892864c7139beb0bc0"
+        },
+        "svg": {
+          "path": "reservation-branches.svg",
+          "sha256": "e42b55f2f9d269b60255cfb5d1aeb9a45da8e60be5f3abab551cbb687bca9a73"
+        }
+      },
+      "variation": "改为幂等查询、已有预约返回和未命中后的创建分支",
+      "semantic": "查询与创建各自有存储返回；已存在结果直接返回；未命中不被当成并发安全保证，原子创建仍执行幂等键唯一约束；容量不足保留出口。",
+      "visual": "幂等说明就近放置，不挤占条件标题；两层条件可区分，未观察到激活条遮字或编号归属不明。",
+      "png_dimensions": [
+        638,
+        846
+      ],
+      "syntax": "passed",
+      "png_svg_render": "passed",
+      "semantic_review": "passed_with_declared_assumptions",
+      "visual_review": "passed_for_reviewed_native_png",
+      "review_scales": [
+        "whole_diagram",
+        "native_reading_size"
+      ],
+      "unresolved_observed_defects": []
+    },
+    {
+      "source": "examples/sequence/reservation-extra-participant.puml",
+      "source_sha256": "b6c507f113a0fe05ba19f8db830de4ac40a703c90145c9e17323f34e4065cb76",
+      "artifacts": {
+        "png": {
+          "path": "reservation-extra-participant.png",
+          "sha256": "5ff13e220a5391d6f75bb4d418304927df21a20d83a80c32507674e12f14c334"
+        },
+        "svg": {
+          "path": "reservation-extra-participant.svg",
+          "sha256": "fb7177c7ae83c994074c4ab547b4b4cd75e14754431bdd5a2ba866ea14cacee3"
+        }
+      },
+      "variation": "5 个参与者，增加权限服务与允许/拒绝判断",
+      "semantic": "权限服务显式同步调用并返回；拒绝分支回到入口；允许分支继续容量约束原子创建；依赖激活在各自调用期间结束。",
+      "visual": "权限服务靠近预约服务，存储位于其后；没有沿用固定等宽列，参与者标题不重叠；消息与条件框可追踪。",
+      "png_dimensions": [
+        510,
+        785
+      ],
+      "syntax": "passed",
+      "png_svg_render": "passed",
+      "semantic_review": "passed_with_declared_assumptions",
+      "visual_review": "passed_for_reviewed_native_png",
+      "review_scales": [
+        "whole_diagram",
+        "native_reading_size"
+      ],
+      "unresolved_observed_defects": []
+    },
+    {
+      "source": "examples/sequence/reservation-long-labels.puml",
+      "source_sha256": "0549b51ca2f0fab483aa3416dbf01dbeb65edb98ad4d0f57f1d2f2158bf1e81f",
+      "artifacts": {
+        "png": {
+          "path": "reservation-long-labels.png",
+          "sha256": "88bcef94fcec87203ef4ffc704f82c501068f92a6655f957ecc4950824577cdd"
+        },
+        "svg": {
+          "path": "reservation-long-labels.svg",
+          "sha256": "95939d6b04f4c56bfb1595c56de23ab1c8e9b46ac957f01a1888453c66f465c5"
+        }
+      },
+      "variation": "增长中文参与者、消息与注释标签；保持基础场景的参与者数和分支",
+      "semantic": "长标签仍对应基础场景相同的调用、存储与失败出口，未为换行省略返回。",
+      "visual": "参与者按职责分两行；编号与消息可区分，条件标题保持短词；正文注释换行，没有观察到撑宽或裁切。",
+      "png_dimensions": [
+        690,
+        865
+      ],
+      "syntax": "passed",
+      "png_svg_render": "passed",
+      "semantic_review": "passed_with_declared_assumptions",
+      "visual_review": "passed_for_reviewed_native_png",
+      "review_scales": [
+        "whole_diagram",
+        "native_reading_size"
+      ],
+      "unresolved_observed_defects": []
+    },
+    {
+      "source": "examples/sequence/reservation.puml",
+      "source_sha256": "0405ab6264ee14c65dddc61d4e06345922535142e82a39e650c742a7b883785f",
+      "artifacts": {
+        "png": {
+          "path": "reservation.png",
+          "sha256": "e3596b07847fbe92a1506ea683d480acb8f8cfd56599e197faf0eaa78226749f"
+        },
+        "svg": {
+          "path": "reservation.svg",
+          "sha256": "30a11652ef84d6f0af04b029f6d77391dfc210b46e823d27ba7a3319de7ec535"
+        }
+      },
+      "variation": "基础场景：4 个参与者，同步调用、自调用、存储与互斥分支",
+      "semantic": "同步调用与虚线返回对象一致；请求有效/无效、创建成功/容量不足均有结果；容量约束原子提交是明确假设，不由阶段线推断。",
+      "visual": "标题、参与者、阶段、条件、编号与注释可读；没有观察到文字裁切或注释遮挡；右侧注释带来局部宽度但未拉宽全图到难以阅读。",
+      "png_dimensions": [
+        557,
+        824
+      ],
+      "syntax": "passed",
+      "png_svg_render": "passed",
+      "semantic_review": "passed_with_declared_assumptions",
+      "visual_review": "passed_for_reviewed_native_png",
+      "review_scales": [
+        "whole_diagram",
+        "native_reading_size"
+      ],
+      "unresolved_observed_defects": []
+    }
+  ],
+  "user_aesthetic_approval": "not_requested",
+  "personal_candidates": {
+    "reported_by_user": 3,
+    "records_accessed_in_this_environment": false,
+    "promoted_or_overwritten": false
+  },
+  "not_validated": [
+    "MQ 异步生产、入队确认与消费",
+    "并发、超时与重试交互场景",
+    "任意参与者规模、超长标签和深层条件",
+    "跨 JDK 补丁、字体文件、平台的逐像素一致性",
+    "用户本地三条候选资产的直接迁移与用户审美认可"
+  ],
+  "limitations": [
+    "语义复查针对虚构场景的声明假设，不验证真实后端行为。",
+    "自动清单仅证明语法与渲染；本文件单独记录视觉复查，不将导出成功当成整体美观保证。",
+    "改变源码、样式或渲染环境后，旧预览与本复查记录不自动有效。"
+  ]
+}

@@ -1,0 +1,38 @@
+@startuml
+!include styles/restrained.iuml
+title 预约创建 · 同步校验与存储
+caption 虚构场景；容量检查与预约写入在一次原子提交中完成；无 MQ 交互
+actor "预约用户" as User
+participant "预约入口" as API
+participant "预约服务" as Booking
+database "预约存储" as DB
+
+== 受理与校验 ==
+User -> API : 提交预约
+activate API
+API -> Booking : 创建预约
+activate Booking
+Booking -> Booking : 校验请求
+note right of Booking
+  必填项完整，且开始时间早于结束时间。
+  这些说明不表示额外执行步骤。
+end note
+
+alt 请求有效
+  == 原子提交 ==
+  Booking -> DB : 按容量约束创建预约
+  activate DB
+  DB --> Booking : 创建成功或容量不足
+  deactivate DB
+  alt 创建成功
+    Booking --> API : 预约编号
+  else 容量不足
+    Booking --> API : 容量冲突
+  end
+else 请求无效
+  Booking --> API : 参数错误
+end
+deactivate Booking
+API --> User : 预约结果
+deactivate API
+@enduml

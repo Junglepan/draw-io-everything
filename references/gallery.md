@@ -32,3 +32,7 @@
 ## 双轴泳道迁移案例
 
 [退款处理](../examples/advanced/refund-matrix.drawio)同时组织责任服务与业务阶段。适合阶段边界明确的跨服务流程；多次跨阶段往返或服务过多时，应考虑单轴泳道或子流程。此案例不作为所有泳道图的唯一构图。
+
+## PlantUML 时序图
+
+[同步预约示例](../examples/sequence/reservation.puml)及其中文长标签、增加参与者、幂等分支三个变体，提供共享样式和实际 PNG/SVG。规范、重建命令与候选边界见 [sequence-diagrams.md](sequence-diagrams.md)。这些新增场景尚不覆盖 MQ 异步交互，不替代原有 draw.io 时序图示例。

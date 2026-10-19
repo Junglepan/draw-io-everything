@@ -1,0 +1,34 @@
+' Candidate palette and spacing, not a personal default or screenshot measurement.
+' Business messages and participant order belong in each .puml source.
+skinparam backgroundColor #FFFFFF
+skinparam defaultFontName Noto Sans CJK SC
+skinparam defaultFontSize 14
+skinparam shadowing false
+skinparam roundcorner 0
+skinparam sequence {
+  ArrowColor #45556B
+  ArrowFontColor #25364B
+  LifeLineBorderColor #CBD3DD
+  LifeLineBackgroundColor #FFFFFF
+  ParticipantBackgroundColor #EAF2FC
+  ParticipantBorderColor #9AAFC7
+  ParticipantFontColor #25364B
+  ActorBackgroundColor #FFFFFF
+  ActorBorderColor #64748B
+  DatabaseBackgroundColor #F0EDF6
+  DatabaseBorderColor #ADA6BF
+  GroupBackgroundColor #FFFFFF
+  GroupBodyBackgroundColor #FFFFFF
+  GroupBorderColor #B9C5D3
+  DividerBackgroundColor #EDF1F6
+  DividerBorderColor #C4CDD8
+  ActivationBackgroundColor #E2EAF4
+  ActivationBorderColor #8CA1BA
+  ParticipantPadding 14
+  MessageAlign left
+}
+skinparam noteBackgroundColor #FFF6D8
+skinparam noteBorderColor #CABB8A
+skinparam noteFontColor #4B4B40
+hide footbox
+autonumber

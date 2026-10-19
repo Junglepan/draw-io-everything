@@ -1,16 +1,16 @@
 <div align="center">
 
-# drawio-everything
+# draw-io-everything
 
 **把优秀图例里的设计方法，变成下一张图的起点。**
 
-面向 AI 编码助手的 draw.io skill · 从参考图学习 · 按场景选图 · 持续积累个人风格
+面向 AI 编码助手的 draw.io / PlantUML 时序图 skill · 从参考图学习 · 持续积累个人风格
 
 [快速开始](#快速开始) · [示例画廊](#示例画廊) · [如何学习你的风格](#如何学习你的风格) · [能力边界](#能力边界)
 
 </div>
 
-好的工程图，应该让读者迅速看清重点、层级和关系。`drawio-everything` 将基础绘图规范、图种语义和从优秀图例提炼的表达方法结合起来，帮助 AI 生成可编辑的 `.drawio` 图，并通过实际渲染检查效果。
+好的工程图，应该让读者迅速看清重点、层级和关系。`draw-io-everything` 将基础绘图规范、图种语义和从优秀图例提炼的表达方法结合起来，帮助 AI 生成可编辑的 `.drawio` 图或 PlantUML `.puml` 时序图，并通过实际渲染检查效果。
 
 它的核心是持续学习：你提供照片、截图、原生文件或总结，skill 分别记录**风格、结构模板、局部模式**，再根据新内容选择和适配。每次学习都有来源和适用边界；个人偏好与技术验证分别记录。
 
@@ -18,7 +18,7 @@
 
 **表达目的明确 → 关系正确 → 呈现清晰 → 视觉增强。**
 
-用简单图形表达必要关系；通过比例、对齐、间距和留白组织信息。一般关系优先圆角折线，色彩用于区分业务归属、主次或状态；不以复杂图案、装饰或节点数量衡量质量。
+用简单图形表达必要关系；通过比例、对齐、间距和留白组织信息。流程与架构的一般关系优先圆角折线，时序消息遵守同步、返回和异步语义；色彩用于区分业务归属、主次或状态，不以复杂图案、装饰或节点数量衡量质量。
 
 [基础美感准则](references/visual-design.md) · [专业表达准则](references/professional-diagrams.md)
 
@@ -28,22 +28,24 @@
 
 ## 快速开始
 
-将本仓库作为 `drawio-everything` 技能目录放入 Codex 的 skills 目录。首次安装、目标目录不存在时：
+将本仓库作为 `draw-io-everything` 技能目录放入 Codex 的 skills 目录。首次安装、目标目录不存在时：
 
 ```bash
 git clone --branch master \
   https://github.com/Junglepan/drawio-everything.git \
-  "${CODEX_HOME:-$HOME/.codex}/skills/drawio-everything"
+  "${CODEX_HOME:-$HOME/.codex}/skills/draw-io-everything"
 ```
 
 已有同名 skill 时，先对比版本再更新，避免覆盖本地修改。其他支持 `SKILL.md` 的助手可按其技能加载机制使用；目前未逐一验证所有客户端。
 
-生成 XML 需要具备文件读写能力的 AI 助手；预览可使用 draw.io Desktop 或 diagrams.net 编辑器。使用此仓库的示例重建脚本需要 Python 3。skill 不包含模型、draw.io 安装包或专用 MCP 服务。
+技能名由 `drawio-everything` 改为 `draw-io-everything`，GitHub 仓库地址保留不变。已有旧目录时，先保留本地修改再调整安装目录与调用名，避免同时加载两份；个人资产库仍兼容 `~/.drawio-everything/library/`，不自动迁移或覆盖记录。
+
+生成源码需要具备文件读写能力的 AI 助手；draw.io 预览可使用 Desktop 或 diagrams.net 编辑器。原有示例重建脚本需要 Python 3；PlantUML 重建脚本需要 Python 3.11+、Java 21、fontconfig 和 Noto Sans CJK SC，首次运行获取校验后的固定版本 JAR。skill 不包含模型、draw.io 安装包或专用 MCP 服务。
 
 **画一张新图**
 
 ```text
-使用 $drawio-everything，为订单平台画系统上下文图。
+使用 $draw-io-everything，为订单平台画系统上下文图。
 读者是产品与研发负责人；包含客户、订单平台、支付平台、配送平台。
 关系为客户下单、订单平台发起支付和提交配送任务。
 交付可编辑 .drawio 与 PNG，检查文字和连线。
@@ -52,9 +54,18 @@ git clone --branch master \
 **从参考图学习**
 
 ```text
-使用 $drawio-everything，学习附件图例。
+使用 $draw-io-everything，学习附件图例。
 我喜欢它的分组和阅读顺序。提取可复用风格与结构模板，
 记录适用场景、内容增多时的处理方法及不适合照搬的部分。
+```
+
+**生成或编辑 PlantUML 时序图**
+
+```text
+使用 $draw-io-everything，为虚构预约服务生成 PlantUML 时序图。
+展示用户、入口、预约服务与存储的调用、返回和容量不足分支。
+按时序图规范适配风格，交付 .puml、所需样式和实际 PNG/SVG，
+说明 PlantUML 版本、JDK、字体及未验证项。
 ```
 
 **明确偏好范围**
@@ -250,10 +261,11 @@ SKILL.md                 技能入口与核心约定
 agents/openai.yaml       Codex 展示元数据
 references/              学习、选型、绘图与资产存储规则
 examples/                11 类场景示例 + advanced/ 下 5 个进阶场景
-scripts/                 源文件生成与结构检查脚本
+examples/sequence/       PlantUML 时序图、共享样式和实际渲染预览
+scripts/                 源文件生成、固定版本渲染与检查脚本
 ```
 
-[图种选择](references/selection.md) · [图例学习](references/learning.md) · [资产约定](references/library.md) · [绘图与验证](references/drawing.md) · [质量复查](references/quality-review.md) · [画廊适配说明](references/gallery.md)
+[图种选择](references/selection.md) · [图例学习](references/learning.md) · [资产约定](references/library.md) · [绘图与验证](references/drawing.md) · [时序图规范](references/sequence-diagrams.md) · [质量复查](references/quality-review.md) · [画廊适配说明](references/gallery.md)
 
 ## 迁移验证：退款双轴泳道
 
@@ -284,12 +296,39 @@ python3 scripts/check_gallery.py
 
 生成脚本使用标准库，负责重建本仓库固定示例，不是通用自动排版引擎。修改布局后应重新导出并检查所有受影响的图。
 
+## PlantUML 时序图与验证
+
+新增的同步预约场景覆盖基础调用、存储访问、条件与激活；三个独立变体分别改变中文标签长度、参与者数量、分支结构。风格与业务内容分离，色值和参与者顺序是可调整的参考，未设为个人默认。
+
+![PlantUML 预约时序图](examples/sequence/rendered/reservation.png)
+
+[可编辑源文件](examples/sequence/reservation.puml) · [PNG](examples/sequence/rendered/reservation.png) · [SVG](examples/sequence/rendered/reservation.svg) · [共享样式](examples/sequence/styles/restrained.iuml)
+
+| 验证变体 | 源码 | 实际预览 |
+| --- | --- | --- |
+| 中文长标签 | [puml](examples/sequence/reservation-long-labels.puml) | [PNG](examples/sequence/rendered/reservation-long-labels.png) / [SVG](examples/sequence/rendered/reservation-long-labels.svg) |
+| 五个参与者 | [puml](examples/sequence/reservation-extra-participant.puml) | [PNG](examples/sequence/rendered/reservation-extra-participant.png) / [SVG](examples/sequence/rendered/reservation-extra-participant.svg) |
+| 幂等查询分支 | [puml](examples/sequence/reservation-branches.puml) | [PNG](examples/sequence/rendered/reservation-branches.png) / [SVG](examples/sequence/rendered/reservation-branches.svg) |
+
+```bash
+python3 scripts/render_sequence.py --install-only
+python3 scripts/render_sequence.py
+python3 scripts/check_sequence.py
+python3 -m unittest discover -s tests -v
+```
+
+PlantUML **1.2026.9** 与官方 JAR SHA-512 固定在 [运行锁](scripts/plantuml-runtime.json)；实际 JDK/字体和源文件、样式、预览哈希记录在渲染清单中。该脚本用于本仓库示例，不是任意 PlantUML 文件的通用依赖分析器。首次需访问 `repo.maven.apache.org`，缓存后离线渲染；时序图无需 Graphviz。
+
+[专用规范及 badcase](references/sequence-diagrams.md) · [渲染证据](examples/sequence/rendered/render-manifest.json) · [语义/视觉复查与范围](docs/sequence-validation.json)
+
+本次新增同步场景与三个适配变体；**MQ 异步交互示例、并发、超时/重试验证尚待单独补充**。用户报告本地已有的图例、风格和布局三条记录仍是候选，本仓库未读取或自动升级这些个人记录。语法、渲染、语义/视觉复查各自记录结果，不将导出成功描述为全部能力已实现。
+
 ## 能力边界
 
 - 支持基于上下文选择、适配与编辑图示，输出质量依赖实际内容、模型和可用工具。
 - 基础泳道图不自动等于 BPMN 合规；系统全景也不自动等于 C4 的某个层级。
 - 箭头、虚实线、边界优先表达正确语义，不能仅因美观而替换。
-- PNG 只是预览，`.drawio` 才是可编辑交付；无法渲染时必须说明未完成视觉验证。
+- PNG/SVG 是预览，draw.io 的 `.drawio` 与 PlantUML 的 `.puml` 及样式才是对应可编辑交付；无法渲染时必须说明未完成视觉验证。
 - 本仓库不提供全面标准审计器、自动学习服务或后台同步服务。
 
 ## 项目鉴赏与持续改进

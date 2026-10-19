@@ -1,0 +1,78 @@
+{
+  "plantuml_version": "1.2026.9",
+  "jar_sha512": "95250104c977ba50fca025d2ec36f92b774f41f759145dd1442804880c5e714d1afb7aaa922f6a8715e68e3c82fe8c92c4c696218bc467fc8f350843c6d3d7c9",
+  "runtime_lock_sha256": "d03b463cb39d795ac44b5e0a91684c90bed4921d3197dcd1f9dfd2f9b759cbe0",
+  "environment": {
+    "java": "openjdk version \"21.0.12.1\" 2026-08-18\nOpenJDK Runtime Environment (build 21.0.12.1+1-1-deb13u1-Debian)\nOpenJDK 64-Bit Server VM (build 21.0.12.1+1-1-deb13u1-Debian, mixed mode, sharing)",
+    "font_family": "Noto Sans CJK SC",
+    "font_file": "/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc",
+    "font_sha256": "b76b0433203017ca80401b2ee0dd69350349871c4b19d504c34dbdd80541690a"
+  },
+  "dependencies": {
+    "examples/sequence/styles/restrained.iuml": "740fd9f9db5dd3a29356abb27a745e551113a5d2ddbe929a210cf15e68753215"
+  },
+  "cases": [
+    {
+      "source": "examples/sequence/reservation-branches.puml",
+      "source_sha256": "74e01086d134636311a648dbdb35393e6307eb4bf88f0cf99d79e063630ea448",
+      "artifacts": {
+        "png": {
+          "path": "reservation-branches.png",
+          "sha256": "eb98c752e61a7b77d6a2360d35dbe2f8d0569ac574b841892864c7139beb0bc0"
+        },
+        "svg": {
+          "path": "reservation-branches.svg",
+          "sha256": "e42b55f2f9d269b60255cfb5d1aeb9a45da8e60be5f3abab551cbb687bca9a73"
+        }
+      }
+    },
+    {
+      "source": "examples/sequence/reservation-extra-participant.puml",
+      "source_sha256": "b6c507f113a0fe05ba19f8db830de4ac40a703c90145c9e17323f34e4065cb76",
+      "artifacts": {
+        "png": {
+          "path": "reservation-extra-participant.png",
+          "sha256": "5ff13e220a5391d6f75bb4d418304927df21a20d83a80c32507674e12f14c334"
+        },
+        "svg": {
+          "path": "reservation-extra-participant.svg",
+          "sha256": "fb7177c7ae83c994074c4ab547b4b4cd75e14754431bdd5a2ba866ea14cacee3"
+        }
+      }
+    },
+    {
+      "source": "examples/sequence/reservation-long-labels.puml",
+      "source_sha256": "0549b51ca2f0fab483aa3416dbf01dbeb65edb98ad4d0f57f1d2f2158bf1e81f",
+      "artifacts": {
+        "png": {
+          "path": "reservation-long-labels.png",
+          "sha256": "88bcef94fcec87203ef4ffc704f82c501068f92a6655f957ecc4950824577cdd"
+        },
+        "svg": {
+          "path": "reservation-long-labels.svg",
+          "sha256": "95939d6b04f4c56bfb1595c56de23ab1c8e9b46ac957f01a1888453c66f465c5"
+        }
+      }
+    },
+    {
+      "source": "examples/sequence/reservation.puml",
+      "source_sha256": "0405ab6264ee14c65dddc61d4e06345922535142e82a39e650c742a7b883785f",
+      "artifacts": {
+        "png": {
+          "path": "reservation.png",
+          "sha256": "e3596b07847fbe92a1506ea683d480acb8f8cfd56599e197faf0eaa78226749f"
+        },
+        "svg": {
+          "path": "reservation.svg",
+          "sha256": "30a11652ef84d6f0af04b029f6d77391dfc210b46e823d27ba7a3319de7ec535"
+        }
+      }
+    }
+  ],
+  "checks": {
+    "syntax": "passed",
+    "png_svg_export": "passed",
+    "semantic_review": "not_run",
+    "visual_review": "not_run"
+  }
+}

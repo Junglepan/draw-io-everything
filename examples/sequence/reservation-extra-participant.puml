@@ -1,0 +1,37 @@
+@startuml
+!include styles/restrained.iuml
+title 参与者扩展 · 独立权限校验
+caption 虚构场景；增加权限服务并就近排列；容量约束仍由预约存储原子执行
+actor "预约用户" as User
+participant "预约入口" as API
+participant "预约服务" as Booking
+participant "权限服务" as Auth
+database "预约存储" as DB
+
+== 受理与权限 ==
+User -> API : 提交预约
+activate API
+API -> Booking : 创建预约
+activate Booking
+Booking -> Auth : 检查预约权限
+activate Auth
+Auth --> Booking : 允许或拒绝
+deactivate Auth
+alt 允许预约
+  == 原子提交 ==
+  Booking -> DB : 按容量约束创建预约
+  activate DB
+  DB --> Booking : 创建成功或容量不足
+  deactivate DB
+  alt 创建成功
+    Booking --> API : 预约编号
+  else 容量不足
+    Booking --> API : 容量冲突
+  end
+else 拒绝预约
+  Booking --> API : 无权限
+end
+deactivate Booking
+API --> User : 预约结果
+deactivate API
+@enduml

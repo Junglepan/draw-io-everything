@@ -1,5 +1,7 @@
 # draw.io 绘图基线与执行
 
+本文件用于 draw.io 原生图。PlantUML 时序图的源码、样式、激活与渲染流程见 [sequence-diagrams.md](sequence-diagrams.md)；用户指定源格式时保持其选择。
+
 ## 准备
 
 明确核心问题、读者、图种与粒度、事实来源、输出尺寸。已知内容直接采用；只问会改变图种、语义或边界的缺口。读取 library/index.json，选择匹配的模板和样式；参照 library.md 的版本标识记录到交付说明。

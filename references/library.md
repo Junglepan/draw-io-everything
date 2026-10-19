@@ -4,6 +4,8 @@
 
 默认根目录为 `~/.drawio-everything/library`；用户指定库时将以下路径相对该根解析。源文件与业务内容可能敏感，保留本地，不自动同步、发布或提交版本控制。
 
+技能改名为 `draw-io-everything` 不改变此兼容路径；不自动搬移、合并或覆盖既有个人库。
+
 `index.json` 初始内容：
 
 ```json
@@ -18,11 +20,13 @@ assets 的每条索引使用 `{id, kind, version, path, status, tags}`，kind �
 
 所有记录包含：`schema_version:1`、`id`、`kind`、`version`、`status`、`title`、`created_at`、`updated_at`、`previous`（首次 null，后续旧版本相对路径）、`sources`、`tags`、`applicability`、`user_preference`、`validation`、`change_reason`。
 
-- sources：数组，每项包含 `type`（image/drawio/url/text_description）、`location`（真实路径、URL 或文字来源）、`sha256`（未知 null）、`observed`（是否直接读取该 type 的来源；读过 text_description 不表示见过图片）、`notes`。转换产物与原始来源分开标识。
+- sources：数组，每项包含 `type`（image/drawio/puml/url/text_description）、`location`（真实路径、URL 或文字来源）、`sha256`（未知 null）、`observed`（是否直接读取该 type 的来源；读过 text_description 不表示见过图片）、`notes`。转换产物与原始来源分开标识。
 - applicability：`diagram_types`、`audiences`、`use_when`、`avoid_when`，均为数组。
 - user_preference：`status`（unknown/partial/endorsed/rejected）、`liked_aspects`、`disliked_aspects`、`evidence`。用户认可不等于技术通过。
 - validation：`status`（not_run/simulated/passed/failed）、`cases`。每个 case 记录场景、原生文件、预览路径、结构检查、语义检查、视觉检查、结果和日期；没有证据的字段为 null。
 - status=validated 仅用于 style/template/pattern，且 validation=passed，至少一个新内容迁移案例有真实源文件和渲染检查。用于提炼的原图本身不是迁移案例。
+
+PlantUML 资产另记源格式 puml、所需本地 include 样式及其哈希；validation.cases 记录 PlantUML 版本、JAR 校验值、JDK、字体和语法/渲染结果，并保留独立的语义与视觉检查。已有个人候选不能因为公开示例通过就自动标为 validated。
 
 按 kind 添加以下字段：
 

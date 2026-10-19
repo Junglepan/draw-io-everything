@@ -1,0 +1,40 @@
+@startuml
+!include styles/restrained.iuml
+title 分支变体 · 幂等查询与重复返回
+caption 虚构场景；增加重复请求出口；幂等键唯一约束与容量检查均在原子创建中执行
+actor "预约用户" as User
+participant "预约入口" as API
+participant "预约服务" as Booking
+database "预约存储" as DB
+
+== 受理与幂等 ==
+User -> API : 提交预约与幂等键
+activate API
+API -> Booking : 创建预约
+activate Booking
+Booking -> DB : 查询幂等键
+activate DB
+DB --> Booking : 已有预约或未命中
+deactivate DB
+alt 已有预约
+  Booking --> API : 返回原预约编号
+else 未命中
+  == 原子提交 ==
+  Booking -> DB : 原子创建或返回同键预约
+  activate DB
+  DB --> Booking : 新建、同键预约或容量不足
+  deactivate DB
+  note right of Booking
+    查询未命中不保证没有并发请求。
+    创建时仍执行幂等键唯一约束。
+  end note
+  alt 新建或同键预约
+    Booking --> API : 预约编号
+  else 容量不足
+    Booking --> API : 容量冲突
+  end
+end
+deactivate Booking
+API --> User : 预约结果
+deactivate API
+@enduml

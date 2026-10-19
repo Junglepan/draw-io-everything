@@ -1,0 +1,38 @@
+@startuml
+!include styles/restrained.iuml
+title 长中文标签变体 · 分层与换行
+caption 虚构场景；仅变更名称与说明长度，保持基础交互与分支
+actor "团队会议室\n预约申请人" as User
+participant "企业协同平台\n预约接入服务" as API
+participant "共享空间资源\n预约编排服务" as Booking
+database "会议室预约\n记录与容量存储" as DB
+
+== 受理与校验 ==
+User -> API : 提交会议室预约申请
+activate API
+API -> Booking : 创建共享空间预约
+activate Booking
+Booking -> Booking : 校验时间与必填项
+note right of Booking
+  开始时间必须早于结束时间；
+  申请人和会议室标识必须完整。
+  完整字段说明保留在接口正文。
+end note
+alt 请求有效
+  == 原子提交 ==
+  Booking -> DB : 按容量约束创建预约
+  activate DB
+  DB --> Booking : 创建成功或容量不足
+  deactivate DB
+  alt 创建成功
+    Booking --> API : 返回可查询的预约编号
+  else 容量不足
+    Booking --> API : 返回可用容量不足提示
+  end
+else 请求无效
+  Booking --> API : 返回时间或必填项错误
+end
+deactivate Booking
+API --> User : 展示会议室预约处理结果
+deactivate API
+@enduml
